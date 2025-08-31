@@ -8,28 +8,28 @@ export function Footer() {
 
   const footerLinks = {
     product: [
-      { name: 'Funcionalidades', href: '#features' },
-      { name: 'Integraciones', href: '#integrations' },
-      { name: 'API', href: '#api' },
-      { name: 'Seguridad', href: '#security' }
+      { name: t('footer.links.features'), href: '#features' },
+      { name: t('footer.links.integrations'), href: '#integrations' },
+      { name: t('footer.links.api'), href: '#api' },
+      { name: t('footer.links.security'), href: '#security' }
     ],
     company: [
-      { name: 'Acerca de', href: '#about' },
-      { name: 'Blog', href: '#blog' },
-      { name: 'Carreras', href: '#careers' },
-      { name: 'Contacto', href: '#contact' }
+      { name: t('footer.links.about'), href: '#about' },
+      { name: t('footer.links.blog'), href: '#blog' },
+      { name: t('footer.links.careers'), href: '#careers' },
+      { name: t('footer.links.contact'), href: '#contact' }
     ],
     resources: [
-      { name: 'Documentación', href: '#docs' },
-      { name: 'Guías', href: '#guides' },
-      { name: 'Soporte', href: '#support' },
-      { name: 'Estado', href: '#status' }
+      { name: t('footer.links.documentation'), href: '#docs' },
+      { name: t('footer.links.guides'), href: '#guides' },
+      { name: t('footer.links.support'), href: '#support' },
+      { name: t('footer.links.status'), href: '#status' }
     ],
     legal: [
-      { name: 'Privacidad', href: '#privacy' },
-      { name: 'Términos', href: '#terms' },
-      { name: 'Cookies', href: '#cookies' },
-      { name: 'GDPR', href: '#gdpr' }
+      { name: t('footer.links.privacy'), href: '#privacy' },
+      { name: t('footer.links.terms'), href: '#terms' },
+      { name: t('footer.links.cookies'), href: '#cookies' },
+      { name: t('footer.links.gdpr'), href: '#gdpr' }
     ]
   };
 
@@ -41,8 +41,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Logo className="mb-4" />
             <p className="text-sm text-neutral-600 dark:text-neutral-400 max-w-sm leading-relaxed">
-              Sistema integral para la gestión moderna de condominios en LATAM. 
-              Automatiza, simplifica y optimiza la administración de tu propiedad.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4 mt-6">
               {/* Social Links */}
@@ -70,7 +69,7 @@ export function Footer() {
           {/* Product */}
           <div>
             <h3 className="text-sm font-semibold text-neutral-900 dark:text-white uppercase tracking-wide mb-4">
-              Producto
+              {t('footer.sections.product')}
             </h3>
             <ul className="space-y-3">
               {footerLinks.product.map((link) => (
@@ -86,7 +85,7 @@ export function Footer() {
           {/* Company */}
           <div>
             <h3 className="text-sm font-semibold text-neutral-900 dark:text-white uppercase tracking-wide mb-4">
-              Empresa
+              {t('footer.sections.company')}
             </h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
@@ -102,7 +101,7 @@ export function Footer() {
           {/* Resources */}
           <div>
             <h3 className="text-sm font-semibold text-neutral-900 dark:text-white uppercase tracking-wide mb-4">
-              Recursos
+              {t('footer.sections.resources')}
             </h3>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
@@ -118,7 +117,7 @@ export function Footer() {
           {/* Legal */}
           <div>
             <h3 className="text-sm font-semibold text-neutral-900 dark:text-white uppercase tracking-wide mb-4">
-              Legal
+              {t('footer.sections.legal')}
             </h3>
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (

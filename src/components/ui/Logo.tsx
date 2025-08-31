@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 interface LogoProps {
   variant?: 'full' | 'icon';
   size?: 'sm' | 'md' | 'lg';
@@ -5,6 +7,7 @@ interface LogoProps {
 }
 
 export function Logo({ variant = 'full', size = 'md', className = '' }: LogoProps) {
+  const { t } = useTranslation();
   const sizes = {
     sm: { icon: 'w-8 h-8', text: 'text-lg' },
     md: { icon: 'w-12 h-12', text: 'text-xl' },
@@ -28,10 +31,10 @@ export function Logo({ variant = 'full', size = 'md', className = '' }: LogoProp
       </div>
       <div>
         <h1 className={`${sizes[size].text} font-semibold text-neutral-900 dark:text-white`}>
-          Malu
+          Malú
         </h1>
         <p className="text-xs text-neutral-500 dark:text-neutral-400 hidden sm:block">
-          Sistema Integral de Gestión de Condominios
+          {t('common.tagline')}
         </p>
       </div>
     </div>

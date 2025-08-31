@@ -70,16 +70,42 @@
     "exploreButton": "Explore product"
   },
   "footer": {
-    "copyright": "Malu — Integral Condominium Management System. All rights reserved.",
+    "description": "Comprehensive system for modern condominium management in LATAM. Automate, simplify and optimize your property administration.",
+    "sections": {
+      "product": "Product",
+      "company": "Company",
+      "resources": "Resources",
+      "legal": "Legal"
+    },
+    "links": {
+      "features": "Features",
+      "integrations": "Integrations",
+      "api": "API",
+      "security": "Security",
+      "about": "About",
+      "blog": "Blog",
+      "careers": "Careers",
+      "contact": "Contact",
+      "documentation": "Documentation",
+      "guides": "Guides",
+      "support": "Support",
+      "status": "Status",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "cookies": "Cookies",
+      "gdpr": "GDPR"
+    },
+    "copyright": "Malú — Comprehensive Condominium Management System. All rights reserved.",
     "design": "Design: Mauro • UI/UX kit included"
   },
   "common": {
     "loading": "Loading...",
     "error": "Error",
-    "retry": "Retry"
+    "retry": "Retry",
+    "tagline": "Comprehensive Condominium Management System"
   },
   "seo": {
-    "title": "Malu - #1 Condominium Management System in LATAM | Automatic Billing",
-    "description": "★ Malu is the #1 condominium management system in LATAM. Automatic billing, digital QR access, smart reservations. Try free and reduce delinquency 31%!"
+    "title": "Malú - #1 Condominium Management System in LATAM | Automatic Billing",
+    "description": "★ Malú is the #1 condominium management system in LATAM. Automatic billing, digital QR access, smart reservations. Try free and reduce delinquency 31%!"
   }
 }

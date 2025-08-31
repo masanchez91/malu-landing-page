@@ -70,16 +70,42 @@
     "exploreButton": "Explorar producto"
   },
   "footer": {
-    "copyright": "Malu — Sistema Integral de Gestión de Condominios. Todos los derechos reservados.",
+    "description": "Sistema integral para la gestión moderna de condominios en LATAM. Automatiza, simplifica y optimiza la administración de tu propiedad.",
+    "sections": {
+      "product": "Producto",
+      "company": "Empresa",
+      "resources": "Recursos",
+      "legal": "Legal"
+    },
+    "links": {
+      "features": "Funcionalidades",
+      "integrations": "Integraciones",
+      "api": "API",
+      "security": "Seguridad",
+      "about": "Acerca de",
+      "blog": "Blog",
+      "careers": "Carreras",
+      "contact": "Contacto",
+      "documentation": "Documentación",
+      "guides": "Guías",
+      "support": "Soporte",
+      "status": "Estado",
+      "privacy": "Privacidad",
+      "terms": "Términos",
+      "cookies": "Cookies",
+      "gdpr": "GDPR"
+    },
+    "copyright": "Malú — Sistema Integral de Gestión de Condominios. Todos los derechos reservados.",
     "design": "Diseño: Mauro • UI/UX kit incluido"
   },
   "common": {
     "loading": "Cargando...",
     "error": "Error",
-    "retry": "Reintentar"
+    "retry": "Reintentar",
+    "tagline": "Sistema Integral de Gestión de Condominios"
   },
   "seo": {
-    "title": "Malu - Sistema de Gestión de Condominios #1 en LATAM | Cobranza Automática",
-    "description": "★ Malu es el sistema #1 de gestión de condominios en LATAM. Cobranza automática, accesos digitales QR, reservas inteligentes. ¡Prueba gratis y reduce morosidad 31%!"
+    "title": "Malú - Sistema de Gestión de Condominios #1 en LATAM | Cobranza Automática",
+    "description": "★ Malú es el sistema #1 de gestión de condominios en LATAM. Cobranza automática, accesos digitales QR, reservas inteligentes. ¡Prueba gratis y reduce morosidad 31%!"
   }
 }
