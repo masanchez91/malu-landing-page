@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "product": "Producto",
+    "pricing": "Precios",
+    "developers": "Developers",
+    "demo": "Solicitar demo",
+    "menu": "Abrir menú"
+  },
+  "hero": {
+    "badge": "Lanza en minutos — API REST + Dashboard",
+    "title": "La administración de tu condominio,",
+    "titleHighlight": "en piloto automático.",
+    "description": "Cobranza automática, accesos digitales y comunicación centralizada — todo en una plataforma segura, rápida y escalable pensada para condominios en LATAM.",
+    "tryButton": "Probar Malu",
+    "demoButton": "Solicitar demo",
+    "stat1Label": "Reduce morosidad",
+    "stat1Value": "31%",
+    "stat2Label": "Integraciones",
+    "stat2Value": "Pasarelas LATAM"
+  },
+  "dashboard": {
+    "title": "Panel de Malu",
+    "subtitle": "Resumen financiero · accesos · reservas",
+    "unit": "Unidad: A-302",
+    "balance": "Saldo:",
+    "collection": "Cobranza",
+    "access": "Accesos",
+    "reservations": "Reservas",
+    "currentMonth": "Mes actual",
+    "today": "Hoy",
+    "week": "Semana",
+    "lastPayments": "Últimos pagos",
+    "amenitiesCalendar": "Calendario de amenidades",
+    "poolTime": "Piscina: 16:00 - 18:00",
+    "hallTime": "Salón: 19:00 - 21:00"
+  },
+  "features": {
+    "block1Title": "Cobranza Inteligente",
+    "block1Desc": "Cuotas automáticas, recordatorios y reportes financieros en tiempo real.",
+    "block2Title": "Accesos Digitales",
+    "block2Desc": "QR temporales, validación en tiempo real y bitácoras auditables.",
+    "block3Title": "Reservas Inteligentes",
+    "block3Desc": "Calendario con reglas, confirmaciones y prevención de choques de horario.",
+    "block4Title": "Comunicación Centralizada",
+    "block4Desc": "Anuncios segmentados, notificaciones push y buzón de sugerencias."
+  },
+  "insights": {
+    "title": "Dashboard — Insights",
+    "subtitle": "Panel de control con métricas en tiempo real y acciones rápidas.",
+    "collection": "Cobranza",
+    "progress": "Progreso",
+    "progressSubtitle": "Cobranza anual",
+    "reservations": "Reservas",
+    "month": "Mes",
+    "week": "Semana",
+    "trendTitle": "Tendencia de pagos (últimos 6 meses)",
+    "chartPlaceholder": "[Gráfica placeholder — Recharts / Apex]",
+    "alerts": "Alertas",
+    "alert1": "Pago vencido — Unidad B-101",
+    "alert2": "Acceso no autorizado — Torre C",
+    "alert3": "Reserva en conflicto — Salón",
+    "time1": "7d",
+    "time2": "Ahora",
+    "time3": "1h"
+  },
+  "cta": {
+    "title": "¿Listo para modernizar tu condominio?",
+    "subtitle": "Comienza con una demo personalizada y conoce cuánto puedes optimizar.",
+    "demoButton": "Solicitar demo",
+    "exploreButton": "Explorar producto"
+  },
+  "footer": {
+    "copyright": "Malu — Sistema Integral de Gestión de Condominios. Todos los derechos reservados.",
+    "design": "Diseño: Mauro • UI/UX kit incluido"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "retry": "Reintentar"
+  },
+  "seo": {
+    "title": "Malu - Sistema de Gestión de Condominios #1 en LATAM | Cobranza Automática",
+    "description": "★ Malu es el sistema #1 de gestión de condominios en LATAM. Cobranza automática, accesos digitales QR, reservas inteligentes. ¡Prueba gratis y reduce morosidad 31%!"
+  }
+}

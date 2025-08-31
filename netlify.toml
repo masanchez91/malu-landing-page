@@ -1,0 +1,62 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# Redirect rules for SPA
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Language redirects
+[[redirects]]
+  from = "/en/*"
+  to = "/:splat"
+  status = 200
+  conditions = {Language = ["en"]}
+
+# SEO redirects for common paths
+[[redirects]]
+  from = "/product"
+  to = "/#product"
+  status = 301
+
+[[redirects]]
+  from = "/pricing"
+  to = "/#pricing"
+  status = 301
+
+[[redirects]]
+  from = "/developers"
+  to = "/#developers"
+  status = 301

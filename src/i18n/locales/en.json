@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "product": "Product",
+    "pricing": "Pricing",
+    "developers": "Developers",
+    "demo": "Request demo",
+    "menu": "Open menu"
+  },
+  "hero": {
+    "badge": "Launch in minutes — REST API + Dashboard",
+    "title": "Your condominium management,",
+    "titleHighlight": "on autopilot.",
+    "description": "Automatic billing, digital access and centralized communication — all in one secure, fast and scalable platform designed for condominiums in LATAM.",
+    "tryButton": "Try Malu",
+    "demoButton": "Request demo",
+    "stat1Label": "Reduces delinquency",
+    "stat1Value": "31%",
+    "stat2Label": "Integrations",
+    "stat2Value": "LATAM Gateways"
+  },
+  "dashboard": {
+    "title": "Malu Dashboard",
+    "subtitle": "Financial summary · access · reservations",
+    "unit": "Unit: A-302",
+    "balance": "Balance:",
+    "collection": "Collection",
+    "access": "Access",
+    "reservations": "Reservations",
+    "currentMonth": "Current month",
+    "today": "Today",
+    "week": "Week",
+    "lastPayments": "Last payments",
+    "amenitiesCalendar": "Amenities calendar",
+    "poolTime": "Pool: 4:00 PM - 6:00 PM",
+    "hallTime": "Hall: 7:00 PM - 9:00 PM"
+  },
+  "features": {
+    "block1Title": "Smart Collection",
+    "block1Desc": "Automatic fees, reminders and real-time financial reports.",
+    "block2Title": "Digital Access",
+    "block2Desc": "Temporary QR codes, real-time validation and auditable logs.",
+    "block3Title": "Smart Reservations",
+    "block3Desc": "Calendar with rules, confirmations and schedule conflict prevention.",
+    "block4Title": "Centralized Communication",
+    "block4Desc": "Segmented announcements, push notifications and suggestion box."
+  },
+  "insights": {
+    "title": "Dashboard — Insights",
+    "subtitle": "Control panel with real-time metrics and quick actions.",
+    "collection": "Collection",
+    "progress": "Progress",
+    "progressSubtitle": "Annual collection",
+    "reservations": "Reservations",
+    "month": "Month",
+    "week": "Week",
+    "trendTitle": "Payment trend (last 6 months)",
+    "chartPlaceholder": "[Chart placeholder — Recharts / Apex]",
+    "alerts": "Alerts",
+    "alert1": "Overdue payment — Unit B-101",
+    "alert2": "Unauthorized access — Tower C",
+    "alert3": "Reservation conflict — Hall",
+    "time1": "7d",
+    "time2": "Now",
+    "time3": "1h"
+  },
+  "cta": {
+    "title": "Ready to modernize your condominium?",
+    "subtitle": "Start with a personalized demo and learn how much you can optimize.",
+    "demoButton": "Request demo",
+    "exploreButton": "Explore product"
+  },
+  "footer": {
+    "copyright": "Malu — Integral Condominium Management System. All rights reserved.",
+    "design": "Design: Mauro • UI/UX kit included"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry"
+  },
+  "seo": {
+    "title": "Malu - #1 Condominium Management System in LATAM | Automatic Billing",
+    "description": "★ Malu is the #1 condominium management system in LATAM. Automatic billing, digital QR access, smart reservations. Try free and reduce delinquency 31%!"
+  }
+}
