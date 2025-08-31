@@ -96,7 +96,7 @@
       "gdpr": "GDPR"
     },
     "copyright": "Malu — Sistema Integral de Gestión de Condominios. Todos los derechos reservados.",
-    "design": "Diseño: Mauro • UI/UX kit incluido"
+    "design": "Desarrollado por The Holy Code • holy-code.com"
   },
   "common": {
     "loading": "Cargando...",
@@ -107,5 +107,114 @@
   "seo": {
     "title": "Malu - Sistema de Gestión de Condominios #1 en LATAM | Cobranza Automática",
     "description": "★ Malu es el sistema #1 de gestión de condominios en LATAM. Cobranza automática, accesos digitales QR, reservas inteligentes. ¡Prueba gratis y reduce morosidad 31%!"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Política de Privacidad",
+      "lastUpdated": "Última actualización",
+      "section1": {
+        "title": "Información General",
+        "content": "En Malu respetamos tu privacidad y nos comprometemos a proteger tus datos personales. Esta política explica cómo recopilamos, usamos y protegemos tu información cuando utilizas nuestros servicios."
+      },
+      "section2": {
+        "title": "Información que Recopilamos",
+        "content": "Recopilamos información que nos proporcionas directamente, como:",
+        "item1": "Datos de contacto (nombre, email, teléfono)",
+        "item2": "Información de la cuenta y preferencias",
+        "item3": "Datos de uso del servicio para mejorar la experiencia"
+      },
+      "section3": {
+        "title": "Cómo Usamos tu Información",
+        "content": "Utilizamos tus datos únicamente para proporcionar y mejorar nuestros servicios, enviar comunicaciones importantes, y cumplir con obligaciones legales. No vendemos ni compartimos tu información personal con terceros para fines comerciales."
+      },
+      "section4": {
+        "title": "Seguridad",
+        "content": "Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger tus datos personales contra acceso no autorizado, alteración, divulgación o destrucción."
+      },
+      "contact": {
+        "title": "Contacto",
+        "content": "Si tienes preguntas sobre esta política de privacidad, puedes contactarnos en:"
+      }
+    },
+    "terms": {
+      "title": "Términos de Servicio",
+      "lastUpdated": "Última actualización",
+      "section1": {
+        "title": "Aceptación de Términos",
+        "content": "Al acceder y usar Malu, aceptas estar vinculado por estos términos de servicio. Si no estás de acuerdo con alguna parte de estos términos, no debes usar nuestro servicio."
+      },
+      "section2": {
+        "title": "Descripción del Servicio",
+        "content": "Malu es una plataforma de gestión integral para condominios que proporciona herramientas para administración, cobranza, control de accesos y comunicación. El servicio se proporciona 'tal como está' sin garantías de ningún tipo."
+      },
+      "section3": {
+        "title": "Uso Aceptable",
+        "content": "Te comprometes a usar Malu únicamente para fines legales y de acuerdo con estos términos. No debes usar el servicio para actividades ilegales, no autorizadas o que puedan dañar el sistema o a otros usuarios."
+      },
+      "section4": {
+        "title": "Limitación de Responsabilidad",
+        "content": "Malu no será responsable por daños indirectos, incidentales, especiales o consecuenciales que resulten del uso o la imposibilidad de usar el servicio, incluso si hemos sido advertidos de la posibilidad de tales daños."
+      },
+      "section5": {
+        "title": "Modificaciones",
+        "content": "Nos reservamos el derecho de modificar estos términos en cualquier momento. Las modificaciones serán efectivas inmediatamente después de su publicación. Tu uso continuado del servicio constituye aceptación de los términos modificados."
+      },
+      "contact": {
+        "title": "Contacto Legal",
+        "content": "Para consultas legales o sobre estos términos, contáctanos en:"
+      }
+    },
+    "cookies": {
+      "title": "Política de Cookies",
+      "lastUpdated": "Última actualización",
+      "section1": {
+        "title": "¿Qué son las Cookies?",
+        "content": "Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas nuestro sitio web. Nos ayudan a mejorar tu experiencia de usuario y el funcionamiento del sitio."
+      },
+      "section2": {
+        "title": "Tipos de Cookies que Usamos",
+        "essential": {
+          "title": "Cookies Esenciales",
+          "content": "Necesarias para el funcionamiento básico del sitio web. Incluyen cookies de sesión y autenticación."
+        },
+        "analytics": {
+          "title": "Cookies de Análisis",
+          "content": "Nos ayudan a entender cómo interactúas con nuestro sitio para mejorar la experiencia del usuario."
+        }
+      },
+      "section3": {
+        "title": "Control de Cookies",
+        "content": "Puedes controlar y eliminar cookies a través de la configuración de tu navegador. Ten en cuenta que deshabilitar ciertas cookies puede afectar la funcionalidad del sitio."
+      },
+      "contact": {
+        "title": "Contacto",
+        "content": "Si tienes preguntas sobre nuestra política de cookies:"
+      }
+    },
+    "gdpr": {
+      "title": "Protección de Datos Global",
+      "lastUpdated": "Última actualización",
+      "section1": {
+        "title": "Nuestro Compromiso",
+        "content": "Malu respeta las leyes de protección de datos en todas las jurisdicciones donde operamos, incluyendo GDPR (UE), LGPD (Brasil), PIPEDA (Canadá) y las regulaciones locales de México y LATAM. Tu privacidad es nuestra prioridad."
+      },
+      "section2": {
+        "title": "Tus Derechos de Privacidad",
+        "right1": "Acceso: Conocer qué datos personales tenemos sobre ti",
+        "right2": "Rectificación: Corregir información inexacta o incompleta",
+        "right3": "Portabilidad: Obtener una copia de tus datos en formato estándar",
+        "right4": "Supresión: Solicitar la eliminación de tus datos personales",
+        "right5": "Oposición: Rechazar ciertos tipos de procesamiento de datos"
+      },
+      "section3": {
+        "title": "Cómo Ejercer tus Derechos",
+        "content": "Para ejercer cualquiera de estos derechos o hacer consultas sobre privacidad, contáctanos. Responderemos en un plazo máximo de 30 días calendario según las leyes aplicables."
+      },
+      "contact": {
+        "title": "Contacto de Privacidad",
+        "content": "Para consultas sobre protección de datos:",
+        "address": "Jurisdicción principal: México, con expansión planificada a toda LATAM y el mundo"
+      }
+    }
   }
 }

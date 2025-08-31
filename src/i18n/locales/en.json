@@ -96,7 +96,7 @@
       "gdpr": "GDPR"
     },
     "copyright": "Malu — Comprehensive Condominium Management System. All rights reserved.",
-    "design": "Design: Mauro • UI/UX kit included"
+    "design": "Developed by The Holy Code • holy-code.com"
   },
   "common": {
     "loading": "Loading...",
@@ -107,5 +107,114 @@
   "seo": {
     "title": "Malu - #1 Condominium Management System in LATAM | Automatic Billing",
     "description": "★ Malu is the #1 condominium management system in LATAM. Automatic billing, digital QR access, smart reservations. Try free and reduce delinquency 31%!"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last updated",
+      "section1": {
+        "title": "General Information",
+        "content": "At Malu we respect your privacy and are committed to protecting your personal data. This policy explains how we collect, use and protect your information when you use our services."
+      },
+      "section2": {
+        "title": "Information We Collect",
+        "content": "We collect information that you provide directly to us, such as:",
+        "item1": "Contact information (name, email, phone)",
+        "item2": "Account information and preferences",
+        "item3": "Service usage data to improve the experience"
+      },
+      "section3": {
+        "title": "How We Use Your Information",
+        "content": "We use your data solely to provide and improve our services, send important communications, and comply with legal obligations. We do not sell or share your personal information with third parties for commercial purposes."
+      },
+      "section4": {
+        "title": "Security",
+        "content": "We implement appropriate technical and organizational security measures to protect your personal data against unauthorized access, alteration, disclosure or destruction."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "If you have questions about this privacy policy, you can contact us at:"
+      }
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "lastUpdated": "Last updated",
+      "section1": {
+        "title": "Acceptance of Terms",
+        "content": "By accessing and using Malu, you agree to be bound by these terms of service. If you disagree with any part of these terms, you should not use our service."
+      },
+      "section2": {
+        "title": "Service Description",
+        "content": "Malu is a comprehensive management platform for condominiums that provides tools for administration, billing, access control and communication. The service is provided 'as is' without warranties of any kind."
+      },
+      "section3": {
+        "title": "Acceptable Use",
+        "content": "You agree to use Malu only for legal purposes and in accordance with these terms. You must not use the service for illegal, unauthorized activities or that may damage the system or other users."
+      },
+      "section4": {
+        "title": "Limitation of Liability",
+        "content": "Malu will not be liable for indirect, incidental, special or consequential damages resulting from the use or inability to use the service, even if we have been advised of the possibility of such damages."
+      },
+      "section5": {
+        "title": "Modifications",
+        "content": "We reserve the right to modify these terms at any time. Modifications will be effective immediately after publication. Your continued use of the service constitutes acceptance of the modified terms."
+      },
+      "contact": {
+        "title": "Legal Contact",
+        "content": "For legal inquiries or about these terms, contact us at:"
+      }
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "lastUpdated": "Last updated",
+      "section1": {
+        "title": "What are Cookies?",
+        "content": "Cookies are small text files that are stored on your device when you visit our website. They help us improve your user experience and the functioning of the site."
+      },
+      "section2": {
+        "title": "Types of Cookies We Use",
+        "essential": {
+          "title": "Essential Cookies",
+          "content": "Necessary for the basic functioning of the website. Include session and authentication cookies."
+        },
+        "analytics": {
+          "title": "Analytics Cookies",
+          "content": "Help us understand how you interact with our site to improve the user experience."
+        }
+      },
+      "section3": {
+        "title": "Cookie Control",
+        "content": "You can control and delete cookies through your browser settings. Note that disabling certain cookies may affect site functionality."
+      },
+      "contact": {
+        "title": "Contact",
+        "content": "If you have questions about our cookie policy:"
+      }
+    },
+    "gdpr": {
+      "title": "Global Data Protection",
+      "lastUpdated": "Last updated",
+      "section1": {
+        "title": "Our Commitment",
+        "content": "Malu respects data protection laws in all jurisdictions where we operate, including GDPR (EU), LGPD (Brazil), PIPEDA (Canada), and local regulations in Mexico and LATAM. Your privacy is our priority."
+      },
+      "section2": {
+        "title": "Your Privacy Rights",
+        "right1": "Access: Know what personal data we have about you",
+        "right2": "Rectification: Correct inaccurate or incomplete information",
+        "right3": "Portability: Obtain a copy of your data in standard format",
+        "right4": "Erasure: Request deletion of your personal data",
+        "right5": "Objection: Refuse certain types of data processing"
+      },
+      "section3": {
+        "title": "How to Exercise Your Rights",
+        "content": "To exercise any of these rights or make privacy inquiries, contact us. We will respond within a maximum of 30 calendar days according to applicable laws."
+      },
+      "contact": {
+        "title": "Privacy Contact",
+        "content": "For data protection inquiries:",
+        "address": "Primary jurisdiction: Mexico, with planned expansion to all LATAM and worldwide"
+      }
+    }
   }
 }

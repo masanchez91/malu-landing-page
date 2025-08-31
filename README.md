@@ -267,7 +267,7 @@ Este proyecto está bajo la Licencia MIT. Ver `LICENSE` para más información.
 
 ## 📞 Contacto
 
-**Malu Team** - [@malusistema](https://twitter.com/malusistema) - hola@malu.com
+**Malu Team** - [@malusistema](https://twitter.com/malusistema) - mauro@holy-code.com
 
 Project Link: [https://github.com/tu-usuario/malu-landing-page](https://github.com/tu-usuario/malu-landing-page)
 

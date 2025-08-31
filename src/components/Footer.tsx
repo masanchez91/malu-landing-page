@@ -1,7 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import { Logo } from './ui/Logo';
 
-export function Footer() {
+interface FooterProps {
+  onLegalClick?: (page: 'privacy' | 'terms' | 'cookies' | 'gdpr') => void;
+}
+
+export function Footer({ onLegalClick }: FooterProps) {
   const { t } = useTranslation();
 
   const currentYear = new Date().getFullYear();
@@ -26,10 +30,10 @@ export function Footer() {
       { name: t('footer.links.status'), href: '#status' }
     ],
     legal: [
-      { name: t('footer.links.privacy'), href: '#privacy' },
-      { name: t('footer.links.terms'), href: '#terms' },
-      { name: t('footer.links.cookies'), href: '#cookies' },
-      { name: t('footer.links.gdpr'), href: '#gdpr' }
+      { name: t('footer.links.privacy'), href: '#privacy', action: 'privacy' as const },
+      { name: t('footer.links.terms'), href: '#terms', action: 'terms' as const },
+      { name: t('footer.links.cookies'), href: '#cookies', action: 'cookies' as const },
+      { name: t('footer.links.gdpr'), href: '#gdpr', action: 'gdpr' as const }
     ]
   };
 
@@ -122,9 +126,12 @@ export function Footer() {
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors">
+                  <button
+                    onClick={() => onLegalClick?.(link.action)}
+                    className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors text-left"
+                  >
                     {link.name}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
@@ -138,7 +145,24 @@ export function Footer() {
               © {currentYear} {t('footer.copyright')}
             </p>
             <p className="text-xs text-neutral-400 dark:text-neutral-500">
-              {t('footer.design')}
+              Desarrollado por{' '}
+              <a 
+                href="https://holy-code.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary-500 hover:text-primary-600 dark:text-primary-400 dark:hover:text-primary-300 transition-colors"
+              >
+                The Holy Code
+              </a>
+              {' • '}
+              <a 
+                href="https://holy-code.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300 transition-colors"
+              >
+                holy-code.com
+              </a>
             </p>
           </div>
         </div>
