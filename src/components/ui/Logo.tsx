@@ -31,7 +31,7 @@ export function Logo({ variant = 'full', size = 'md', className = '' }: LogoProp
       </div>
       <div>
         <h1 className={`${sizes[size].text} font-semibold text-neutral-900 dark:text-white`}>
-          Malú
+          Malu
         </h1>
         <p className="text-xs text-neutral-500 dark:text-neutral-400 hidden sm:block">
           {t('common.tagline')}

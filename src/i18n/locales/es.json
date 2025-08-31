@@ -15,8 +15,8 @@
     "demoButton": "Solicitar demo",
     "stat1Label": "Reduce morosidad",
     "stat1Value": "31%",
-    "stat2Label": "Integraciones",
-    "stat2Value": "Pasarelas LATAM"
+    "stat2Label": "Tiempo ahorrado",
+    "stat2Value": "80%"
   },
   "dashboard": {
     "title": "Panel de Malu",
@@ -95,7 +95,7 @@
       "cookies": "Cookies",
       "gdpr": "GDPR"
     },
-    "copyright": "Malú — Sistema Integral de Gestión de Condominios. Todos los derechos reservados.",
+    "copyright": "Malu — Sistema Integral de Gestión de Condominios. Todos los derechos reservados.",
     "design": "Diseño: Mauro • UI/UX kit incluido"
   },
   "common": {
@@ -105,7 +105,7 @@
     "tagline": "Sistema Integral de Gestión de Condominios"
   },
   "seo": {
-    "title": "Malú - Sistema de Gestión de Condominios #1 en LATAM | Cobranza Automática",
-    "description": "★ Malú es el sistema #1 de gestión de condominios en LATAM. Cobranza automática, accesos digitales QR, reservas inteligentes. ¡Prueba gratis y reduce morosidad 31%!"
+    "title": "Malu - Sistema de Gestión de Condominios #1 en LATAM | Cobranza Automática",
+    "description": "★ Malu es el sistema #1 de gestión de condominios en LATAM. Cobranza automática, accesos digitales QR, reservas inteligentes. ¡Prueba gratis y reduce morosidad 31%!"
   }
 }

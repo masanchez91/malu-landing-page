@@ -15,8 +15,8 @@
     "demoButton": "Request demo",
     "stat1Label": "Reduces delinquency",
     "stat1Value": "31%",
-    "stat2Label": "Integrations",
-    "stat2Value": "LATAM Gateways"
+    "stat2Label": "Time saved",
+    "stat2Value": "80%"
   },
   "dashboard": {
     "title": "Malu Dashboard",
@@ -95,7 +95,7 @@
       "cookies": "Cookies",
       "gdpr": "GDPR"
     },
-    "copyright": "Malú — Comprehensive Condominium Management System. All rights reserved.",
+    "copyright": "Malu — Comprehensive Condominium Management System. All rights reserved.",
     "design": "Design: Mauro • UI/UX kit included"
   },
   "common": {
@@ -105,7 +105,7 @@
     "tagline": "Comprehensive Condominium Management System"
   },
   "seo": {
-    "title": "Malú - #1 Condominium Management System in LATAM | Automatic Billing",
-    "description": "★ Malú is the #1 condominium management system in LATAM. Automatic billing, digital QR access, smart reservations. Try free and reduce delinquency 31%!"
+    "title": "Malu - #1 Condominium Management System in LATAM | Automatic Billing",
+    "description": "★ Malu is the #1 condominium management system in LATAM. Automatic billing, digital QR access, smart reservations. Try free and reduce delinquency 31%!"
   }
 }
