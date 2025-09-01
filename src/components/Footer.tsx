@@ -3,9 +3,10 @@ import { Logo } from './ui/Logo';
 
 interface FooterProps {
   onLegalClick?: (page: 'privacy' | 'terms' | 'cookies' | 'gdpr') => void;
+  onResourceClick?: (page: 'guides' | 'support' | 'status') => void;
 }
 
-export function Footer({ onLegalClick }: FooterProps) {
+export function Footer({ onLegalClick, onResourceClick }: FooterProps) {
   const { t } = useTranslation();
 
   const currentYear = new Date().getFullYear();
@@ -25,9 +26,9 @@ export function Footer({ onLegalClick }: FooterProps) {
     ],
     resources: [
       { name: t('footer.links.documentation'), href: '#docs' },
-      { name: t('footer.links.guides'), href: '#guides' },
-      { name: t('footer.links.support'), href: '#support' },
-      { name: t('footer.links.status'), href: '#status' }
+      { name: t('footer.links.guides'), href: '#guides', action: 'guides' as const },
+      { name: t('footer.links.support'), href: '#support', action: 'support' as const },
+      { name: t('footer.links.status'), href: '#status', action: 'status' as const }
     ],
     legal: [
       { name: t('footer.links.privacy'), href: '#privacy', action: 'privacy' as const },
@@ -110,9 +111,18 @@ export function Footer({ onLegalClick }: FooterProps) {
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors">
-                    {link.name}
-                  </a>
+                  {link.action ? (
+                    <button
+                      onClick={() => onResourceClick?.(link.action)}
+                      className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors text-left"
+                    >
+                      {link.name}
+                    </button>
+                  ) : (
+                    <a href={link.href} className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors">
+                      {link.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

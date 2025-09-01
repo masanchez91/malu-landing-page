@@ -7,7 +7,7 @@
     "menu": "Abrir menú"
   },
   "hero": {
-    "badge": "Lanza en minutos — API REST + Dashboard",
+    "badge": "Listo en minutos",
     "title": "La administración de tu condominio,",
     "titleHighlight": "en piloto automático.",
     "description": "Cobranza automática, accesos digitales y comunicación centralizada — todo en una plataforma segura, rápida y escalable pensada para condominios en LATAM.",
@@ -214,6 +214,151 @@
         "title": "Contacto de Privacidad",
         "content": "Para consultas sobre protección de datos:",
         "address": "Jurisdicción principal: México, con expansión planificada a toda LATAM y el mundo"
+      }
+    }
+  },
+  "resources": {
+    "guides": {
+      "title": "Guías de Malú",
+      "subtitle": "Todo lo que necesitas saber para aprovechar al máximo tu sistema de gestión de condominios",
+      "quickStart": {
+        "title": "Inicio Rápido",
+        "description": "Configura tu condominio en Malú en menos de 15 minutos",
+        "step1": "Configuración inicial del condominio",
+        "step2": "Creación de usuarios y roles",
+        "step3": "Setup de amenidades y horarios",
+        "step4": "Configuración de cobranza automática"
+      },
+      "roles": {
+        "title": "Roles y Permisos",
+        "description": "Comprende los diferentes niveles de acceso en Malú",
+        "superAdmin": "Super Admin",
+        "superAdminDesc": "Control total del sistema multi-tenant",
+        "admin": "Administrador",
+        "adminDesc": "Gestión completa del condominio asignado",
+        "resident": "Residente",
+        "residentDesc": "Acceso a servicios y información personal",
+        "guard": "Guardia",
+        "guardDesc": "Control de accesos y seguridad"
+      },
+      "billing": {
+        "title": "Sistema de Cobranza",
+        "description": "Automatiza y optimiza la gestión financiera de tu condominio",
+        "feature1": "Configurar cuotas mensuales automáticas",
+        "feature2": "Múltiples métodos de pago disponibles",
+        "feature3": "Seguimiento inteligente de morosidad",
+        "feature4": "Reportes financieros detallados"
+      },
+      "additionalTitle": "Recursos Adicionales",
+      "videoTutorials": "Video Tutoriales",
+      "videoTutorialsDesc": "Aprende visualmente con nuestros tutoriales paso a paso",
+      "bestPractices": "Mejores Prácticas",
+      "bestPracticesDesc": "Consejos de expertos para optimizar tu gestión"
+    },
+    "support": {
+      "title": "Centro de Soporte",
+      "subtitle": "Encuentra respuestas rápidas a tus preguntas o contacta directamente con nuestro equipo",
+      "faqTitle": "Preguntas Frecuentes",
+      "faq1": {
+        "question": "¿Cómo registro un nuevo residente en el sistema?",
+        "answer": "Ve a la sección Residentes > Agregar Nuevo. Completa los datos básicos, asigna la unidad y define si es propietario o inquilino. El sistema enviará automáticamente las credenciales de acceso."
+      },
+      "faq2": {
+        "question": "¿Cómo genero códigos QR para visitantes?",
+        "answer": "Desde el módulo de Accesos, selecciona 'Generar QR'. Define la vigencia (horas/días), el tipo de acceso y opcionalmente agrega una nota. El código se puede enviar por WhatsApp o email."
+      },
+      "faq3": {
+        "question": "¿Cómo configuro las reservas de amenidades?",
+        "answer": "En Amenidades > Configuración, define horarios disponibles, duración máxima, restricciones y si requiere aprobación. Los residentes podrán reservar desde su panel."
+      },
+      "faq4": {
+        "question": "¿Cómo funciona la cobranza automática?",
+        "answer": "Define los conceptos de cobro, fechas de vencimiento y métodos de pago. El sistema genera automáticamente las cuotas mensuales y envía recordatorios antes del vencimiento."
+      },
+      "faq5": {
+        "question": "¿Puedo personalizar las notificaciones?",
+        "answer": "Sí, en Configuración > Notificaciones puedes activar/desactivar diferentes tipos de alertas, definir plantillas de mensajes y programar envíos automáticos."
+      },
+      "faq6": {
+        "question": "¿Cómo accedo a los reportes financieros?",
+        "answer": "En el módulo Reportes encontrarás estadísticas de cobranza, morosidad, pagos por período y exportación a Excel. Los datos se actualizan en tiempo real."
+      },
+      "commonIssuesTitle": "Problemas Comunes y Soluciones",
+      "solution": "Solución",
+      "issue1": {
+        "title": "El código QR no funciona al escanearlo",
+        "description": "El visitante no puede ingresar con el código QR generado",
+        "solution": "Verifica que el código esté vigente y que el dispositivo del guardia tenga conexión a internet. Regenera el código si es necesario."
+      },
+      "issue2": {
+        "title": "No recibo notificaciones en mi dispositivo",
+        "description": "Las alertas y notificaciones no llegan al móvil o email",
+        "solution": "Revisa la configuración de notificaciones en tu perfil y verifica que los permisos estén habilitados en tu dispositivo móvil."
+      },
+      "issue3": {
+        "title": "Error al procesar un pago",
+        "description": "El sistema marca error al registrar un pago realizado",
+        "solution": "Verifica los datos del comprobante y que el monto coincida. Si persiste, contacta soporte con el número de transacción."
+      },
+      "contactTitle": "¿Necesitas más ayuda?",
+      "contactSubtitle": "Nuestro equipo está listo para asistirte",
+      "emailSupport": "Soporte por Email",
+      "responseTime": "Tiempo de respuesta",
+      "businessHours": "Horario de Atención",
+      "hours": "Lunes a Viernes, 9:00 - 18:00",
+      "urgentIssues": "Problemas Urgentes",
+      "urgentDesc": "Para emergencias del sistema",
+      "urgentNote": "Marca 'URGENTE' en el asunto"
+    },
+    "status": {
+      "title": "Estado del Sistema",
+      "subtitle": "Monitoreo en tiempo real del estado operacional de Malú y próximas actualizaciones",
+      "allSystemsOperational": "Todos los Sistemas Operacionales",
+      "operationalDesc": "Malú está funcionando normalmente sin interrupciones reportadas",
+      "systemComponents": "Componentes del Sistema",
+      "operational": "Operacional",
+      "webApplication": "Aplicación Web",
+      "webAppDesc": "Panel principal y módulos de gestión",
+      "database": "Base de Datos",
+      "databaseDesc": "Almacenamiento y consulta de información",
+      "responseTime": "Tiempo de respuesta",
+      "notifications": "Sistema de Notificaciones",
+      "notificationsDesc": "Envío de emails, SMS y push notifications",
+      "deliveryRate": "Tasa de entrega",
+      "fileStorage": "Almacenamiento de Archivos",
+      "fileStorageDesc": "Documentos, imágenes y respaldos",
+      "availability": "Disponibilidad",
+      "roadmapTitle": "Roadmap de Desarrollo 2025-2026",
+      "q3Title": "Q3 2025: Integraciones Financieras",
+      "q3Description": "Conexión directa con bancos y pasarelas de pago de México y LATAM",
+      "bankIntegrations": "Integraciones Bancarias",
+      "paymentGateways": "Pasarelas de Pago",
+      "q4Title": "Q4 2025: Inteligencia Artificial",
+      "q4Description": "IA para predicción de morosidad y automatización inteligente",
+      "aiPredictions": "Predicciones IA",
+      "automation": "Automatización",
+      "q1Title": "Q1 2026: Reportes Avanzados",
+      "q1Description": "Business intelligence y analítica avanzada para toma de decisiones",
+      "advancedReports": "Reportes Avanzados",
+      "dataExport": "Exportación de Datos",
+      "q2Title": "Q2 2026: Aplicación Móvil Nativa",
+      "q2Description": "Apps nativas para iOS y Android con funcionalidad completa",
+      "pushNotifications": "Push Notifications",
+      "recentUpdates": "Actualizaciones Recientes",
+      "improvement": "Mejora",
+      "newFeature": "Nueva Función",
+      "bugFix": "Corrección",
+      "update1": {
+        "title": "Optimización de Rendimiento",
+        "description": "Mejoras en velocidad de carga y respuesta del sistema"
+      },
+      "update2": {
+        "title": "Nuevas Plantillas de Notificación",
+        "description": "Mensajes personalizables para diferentes tipos de comunicación"
+      },
+      "update3": {
+        "title": "Corrección en Módulo de Reservas",
+        "description": "Solucionado problema con reservas en horarios específicos"
       }
     }
   }

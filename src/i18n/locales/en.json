@@ -7,7 +7,7 @@
     "menu": "Open menu"
   },
   "hero": {
-    "badge": "Launch in minutes — REST API + Dashboard",
+    "badge": "Ready in minutes",
     "title": "Your condominium management,",
     "titleHighlight": "on autopilot.",
     "description": "Automatic billing, digital access and centralized communication — all in one secure, fast and scalable platform designed for condominiums in LATAM.",
@@ -214,6 +214,151 @@
         "title": "Privacy Contact",
         "content": "For data protection inquiries:",
         "address": "Primary jurisdiction: Mexico, with planned expansion to all LATAM and worldwide"
+      }
+    }
+  },
+  "resources": {
+    "guides": {
+      "title": "Malú Guides",
+      "subtitle": "Everything you need to know to get the most out of your condominium management system",
+      "quickStart": {
+        "title": "Quick Start",
+        "description": "Set up your condominium in Malú in less than 15 minutes",
+        "step1": "Initial condominium configuration",
+        "step2": "User and role creation",
+        "step3": "Amenities and schedule setup",
+        "step4": "Automatic billing configuration"
+      },
+      "roles": {
+        "title": "Roles & Permissions",
+        "description": "Understand the different access levels in Malú",
+        "superAdmin": "Super Admin",
+        "superAdminDesc": "Full control of the multi-tenant system",
+        "admin": "Administrator",
+        "adminDesc": "Complete management of assigned condominium",
+        "resident": "Resident",
+        "residentDesc": "Access to services and personal information",
+        "guard": "Security Guard",
+        "guardDesc": "Access control and security"
+      },
+      "billing": {
+        "title": "Billing System",
+        "description": "Automate and optimize your condominium's financial management",
+        "feature1": "Set up automatic monthly fees",
+        "feature2": "Multiple payment methods available",
+        "feature3": "Smart delinquency tracking",
+        "feature4": "Detailed financial reports"
+      },
+      "additionalTitle": "Additional Resources",
+      "videoTutorials": "Video Tutorials",
+      "videoTutorialsDesc": "Learn visually with our step-by-step tutorials",
+      "bestPractices": "Best Practices",
+      "bestPracticesDesc": "Expert tips to optimize your management"
+    },
+    "support": {
+      "title": "Support Center",
+      "subtitle": "Find quick answers to your questions or contact our team directly",
+      "faqTitle": "Frequently Asked Questions",
+      "faq1": {
+        "question": "How do I register a new resident in the system?",
+        "answer": "Go to Residents > Add New. Complete basic information, assign the unit and define if they are owner or tenant. The system will automatically send access credentials."
+      },
+      "faq2": {
+        "question": "How do I generate QR codes for visitors?",
+        "answer": "From the Access module, select 'Generate QR'. Define validity (hours/days), access type and optionally add a note. The code can be sent via WhatsApp or email."
+      },
+      "faq3": {
+        "question": "How do I configure amenity reservations?",
+        "answer": "In Amenities > Configuration, define available hours, maximum duration, restrictions and whether approval is required. Residents can book from their panel."
+      },
+      "faq4": {
+        "question": "How does automatic billing work?",
+        "answer": "Define billing concepts, due dates and payment methods. The system automatically generates monthly fees and sends reminders before expiration."
+      },
+      "faq5": {
+        "question": "Can I customize notifications?",
+        "answer": "Yes, in Settings > Notifications you can enable/disable different types of alerts, define message templates and schedule automatic sending."
+      },
+      "faq6": {
+        "question": "How do I access financial reports?",
+        "answer": "In the Reports module you'll find billing statistics, delinquency, payments by period and Excel export. Data updates in real time."
+      },
+      "commonIssuesTitle": "Common Issues and Solutions",
+      "solution": "Solution",
+      "issue1": {
+        "title": "QR code doesn't work when scanned",
+        "description": "Visitor cannot enter with the generated QR code",
+        "solution": "Verify the code is still valid and the guard's device has internet connection. Regenerate the code if necessary."
+      },
+      "issue2": {
+        "title": "I don't receive notifications on my device",
+        "description": "Alerts and notifications don't reach mobile or email",
+        "solution": "Check notification settings in your profile and verify permissions are enabled on your mobile device."
+      },
+      "issue3": {
+        "title": "Error processing a payment",
+        "description": "System shows error when registering a completed payment",
+        "solution": "Verify receipt data and that the amount matches. If it persists, contact support with the transaction number."
+      },
+      "contactTitle": "Need more help?",
+      "contactSubtitle": "Our team is ready to assist you",
+      "emailSupport": "Email Support",
+      "responseTime": "Response time",
+      "businessHours": "Business Hours",
+      "hours": "Monday to Friday, 9:00 - 18:00",
+      "urgentIssues": "Urgent Issues",
+      "urgentDesc": "For system emergencies",
+      "urgentNote": "Mark 'URGENT' in subject"
+    },
+    "status": {
+      "title": "System Status",
+      "subtitle": "Real-time monitoring of Malú's operational status and upcoming updates",
+      "allSystemsOperational": "All Systems Operational",
+      "operationalDesc": "Malú is running normally with no reported interruptions",
+      "systemComponents": "System Components",
+      "operational": "Operational",
+      "webApplication": "Web Application",
+      "webAppDesc": "Main panel and management modules",
+      "database": "Database",
+      "databaseDesc": "Information storage and queries",
+      "responseTime": "Response time",
+      "notifications": "Notification System",
+      "notificationsDesc": "Email, SMS and push notification delivery",
+      "deliveryRate": "Delivery rate",
+      "fileStorage": "File Storage",
+      "fileStorageDesc": "Documents, images and backups",
+      "availability": "Availability",
+      "roadmapTitle": "2025-2026 Development Roadmap",
+      "q3Title": "Q3 2025: Financial Integrations",
+      "q3Description": "Direct connection with banks and payment gateways in Mexico and LATAM",
+      "bankIntegrations": "Bank Integrations",
+      "paymentGateways": "Payment Gateways",
+      "q4Title": "Q4 2025: Artificial Intelligence",
+      "q4Description": "AI for delinquency prediction and intelligent automation",
+      "aiPredictions": "AI Predictions",
+      "automation": "Automation",
+      "q1Title": "Q1 2026: Advanced Reports",
+      "q1Description": "Business intelligence and advanced analytics for decision making",
+      "advancedReports": "Advanced Reports",
+      "dataExport": "Data Export",
+      "q2Title": "Q2 2026: Native Mobile App",
+      "q2Description": "Native iOS and Android apps with full functionality",
+      "pushNotifications": "Push Notifications",
+      "recentUpdates": "Recent Updates",
+      "improvement": "Improvement",
+      "newFeature": "New Feature",
+      "bugFix": "Bug Fix",
+      "update1": {
+        "title": "Performance Optimization",
+        "description": "Improvements in system loading speed and response"
+      },
+      "update2": {
+        "title": "New Notification Templates",
+        "description": "Customizable messages for different types of communication"
+      },
+      "update3": {
+        "title": "Reservation Module Fix",
+        "description": "Fixed issue with reservations at specific times"
       }
     }
   }

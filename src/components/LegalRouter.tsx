@@ -3,11 +3,14 @@ import { PrivacyPolicy } from './legal/PrivacyPolicy';
 import { TermsOfService } from './legal/TermsOfService';
 import { CookiePolicy } from './legal/CookiePolicy';
 import { GDPRCompliance } from './legal/GDPRCompliance';
+import { GuidesPage } from './resources/GuidesPage';
+import { SupportPage } from './resources/SupportPage';
+import { StatusPage } from './resources/StatusPage';
 
-type LegalPage = 'privacy' | 'terms' | 'cookies' | 'gdpr' | null;
+type PageType = 'privacy' | 'terms' | 'cookies' | 'gdpr' | 'guides' | 'support' | 'status' | null;
 
 interface LegalRouterProps {
-  activePage: LegalPage;
+  activePage: PageType;
   onClose: () => void;
 }
 
@@ -24,6 +27,12 @@ export function LegalRouter({ activePage, onClose }: LegalRouterProps) {
         return <CookiePolicy />;
       case 'gdpr':
         return <GDPRCompliance />;
+      case 'guides':
+        return <GuidesPage />;
+      case 'support':
+        return <SupportPage />;
+      case 'status':
+        return <StatusPage />;
       default:
         return null;
     }
