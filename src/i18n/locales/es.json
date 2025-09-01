@@ -519,5 +519,15 @@
         "privacy": "Al enviar este formulario, aceptas nuestros términos de privacidad."
       }
     }
+  },
+  "blog": {
+    "backToBlog": "← Volver al Blog",
+    "share": "Compartir",
+    "tags": "Etiquetas",
+    "cta": {
+      "title": "¿Te interesa Malu para tu condominio?",
+      "description": "Contáctanos para una demo personalizada y descubre cómo podemos ayudarte",
+      "contact": "Contactar"
+    }
   }
 }

@@ -519,5 +519,15 @@
         "privacy": "By submitting this form, you accept our privacy terms."
       }
     }
+  },
+  "blog": {
+    "backToBlog": "← Back to Blog",
+    "share": "Share",
+    "tags": "Tags",
+    "cta": {
+      "title": "Interested in Malu for your condominium?",
+      "description": "Contact us for a personalized demo and discover how we can help you",
+      "contact": "Contact"
+    }
   }
 }
