@@ -6,8 +6,12 @@ import { GDPRCompliance } from './legal/GDPRCompliance';
 import { GuidesPage } from './resources/GuidesPage';
 import { SupportPage } from './resources/SupportPage';
 import { StatusPage } from './resources/StatusPage';
+import { AboutPage } from './company/AboutPage';
+import { BlogPage } from './company/BlogPage';
+import { CareersPage } from './company/CareersPage';
+import { ContactPage } from './company/ContactPage';
 
-type PageType = 'privacy' | 'terms' | 'cookies' | 'gdpr' | 'guides' | 'support' | 'status' | null;
+type PageType = 'privacy' | 'terms' | 'cookies' | 'gdpr' | 'guides' | 'support' | 'status' | 'about' | 'blog' | 'careers' | 'contact' | null;
 
 interface LegalRouterProps {
   activePage: PageType;
@@ -33,6 +37,14 @@ export function LegalRouter({ activePage, onClose }: LegalRouterProps) {
         return <SupportPage />;
       case 'status':
         return <StatusPage />;
+      case 'about':
+        return <AboutPage />;
+      case 'blog':
+        return <BlogPage />;
+      case 'careers':
+        return <CareersPage />;
+      case 'contact':
+        return <ContactPage />;
       default:
         return null;
     }

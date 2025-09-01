@@ -9,7 +9,7 @@ import { CTA } from './components/CTA';
 import { Footer } from './components/Footer';
 import { LegalRouter } from './components/LegalRouter';
 
-type PageType = 'privacy' | 'terms' | 'cookies' | 'gdpr' | 'guides' | 'support' | 'status' | null;
+type PageType = 'privacy' | 'terms' | 'cookies' | 'gdpr' | 'guides' | 'support' | 'status' | 'about' | 'blog' | 'careers' | 'contact' | null;
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -25,6 +25,10 @@ function App() {
   };
 
   const handleResourceClick = (page: 'guides' | 'support' | 'status') => {
+    setActivePage(page);
+  };
+
+  const handleCompanyClick = (page: 'about' | 'blog' | 'careers' | 'contact') => {
     setActivePage(page);
   };
 
@@ -58,7 +62,7 @@ function App() {
             <CTA />
           </main>
           
-          <Footer onLegalClick={handleLegalClick} onResourceClick={handleResourceClick} />
+          <Footer onLegalClick={handleLegalClick} onResourceClick={handleResourceClick} onCompanyClick={handleCompanyClick} />
         </div>
       </div>
     </HelmetProvider>

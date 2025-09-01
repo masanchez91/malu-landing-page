@@ -219,11 +219,11 @@
   },
   "resources": {
     "guides": {
-      "title": "Malú Guides",
+      "title": "Malu Guides",
       "subtitle": "Everything you need to know to get the most out of your condominium management system",
       "quickStart": {
         "title": "Quick Start",
-        "description": "Set up your condominium in Malú in less than 15 minutes",
+        "description": "Set up your condominium in Malu in less than 15 minutes",
         "step1": "Initial condominium configuration",
         "step2": "User and role creation",
         "step3": "Amenities and schedule setup",
@@ -231,7 +231,7 @@
       },
       "roles": {
         "title": "Roles & Permissions",
-        "description": "Understand the different access levels in Malú",
+        "description": "Understand the different access levels in Malu",
         "superAdmin": "Super Admin",
         "superAdminDesc": "Full control of the multi-tenant system",
         "admin": "Administrator",
@@ -312,9 +312,9 @@
     },
     "status": {
       "title": "System Status",
-      "subtitle": "Real-time monitoring of Malú's operational status and upcoming updates",
+      "subtitle": "Real-time monitoring of Malu's operational status and upcoming updates",
       "allSystemsOperational": "All Systems Operational",
-      "operationalDesc": "Malú is running normally with no reported interruptions",
+      "operationalDesc": "Malu is running normally with no reported interruptions",
       "systemComponents": "System Components",
       "operational": "Operational",
       "webApplication": "Web Application",
@@ -359,6 +359,163 @@
       "update3": {
         "title": "Reservation Module Fix",
         "description": "Fixed issue with reservations at specific times"
+      }
+    }
+  },
+  "company": {
+    "careers": {
+      "title": "Join Malu",
+      "subtitle": "Build the future of condominium management in LATAM with us",
+      "remote": {
+        "title": "🌍 100% Remote",
+        "description": "We work completely remotely from anywhere in LATAM. Flexibility and work-life balance are fundamental to us."
+      },
+      "openPositions": "Open Positions",
+      "position": {
+        "title": "Customer Success Specialist",
+        "remote": "100% Remote",
+        "fullTime": "Full Time",
+        "apply": "Apply Now",
+        "description": "We're looking for a passionate Customer Success Specialist to help our clients succeed with Malu. You'll be the main point of contact for condominium administrators across LATAM.",
+        "responsibilities": "Responsibilities",
+        "resp1": "Guide new clients in Malu implementation",
+        "resp2": "Provide technical support and best practices",
+        "resp3": "Identify growth and retention opportunities",
+        "resp4": "Collaborate with product to improve user experience",
+        "requirements": "Requirements",
+        "req1": "Experience in Customer Success or similar roles",
+        "req2": "Excellent Spanish communication skills",
+        "req3": "Real estate management knowledge is a plus",
+        "req4": "Availability to work in LATAM timezone"
+      },
+      "benefits": {
+        "title": "Why work at Malu?",
+        "flexible": "Flexible Hours",
+        "flexibleDesc": "Work when you're most productive, respecting team meetings",
+        "growth": "Professional Growth",
+        "growthDesc": "Learning and development opportunities in a growing market",
+        "culture": "Collaborative Culture",
+        "cultureDesc": "Inclusive and diverse work environment focused on results"
+      },
+      "contact": {
+        "title": "Interested in joining?",
+        "description": "Send us your CV and cover letter explaining why you want to be part of Malu"
+      }
+    },
+    "about": {
+      "title": "About Malu",
+      "subtitle": "Revolutionizing condominium management in Latin America with simple and effective technology",
+      "mission": {
+        "title": "Our Mission",
+        "description": "Simplify condominium administration through accessible technology, automating complex processes so administrators and residents can focus on what really matters: creating thriving communities."
+      },
+      "story": {
+        "title": "Our Story",
+        "p1": "Malu was born from frustration seeing how condominium management in LATAM still depended on manual processes, papers and obsolete systems that generated inefficiencies and conflicts.",
+        "p2": "Founded in 2025 by a team with experience in PropTech and real estate management, Malu was designed specifically for Latin American market needs.",
+        "p3": "From day one, we bet on simplicity without sacrificing functionality. We believe the best technology becomes invisible to the end user.",
+        "founded": "Founded",
+        "focus": "Focus",
+        "remote": "Remote",
+        "units": "Units"
+      },
+      "values": {
+        "title": "Our Values",
+        "simplicity": "Simplicity",
+        "simplicityDesc": "Complexity is the enemy of adoption. We design intuitive solutions.",
+        "innovation": "Innovation",
+        "innovationDesc": "We constantly seek better ways to solve real problems.",
+        "community": "Community",
+        "communityDesc": "We strengthen relationships between administrators, residents and providers."
+      },
+      "team": {
+        "title": "Our Team",
+        "description": "We are a small but committed team, working 100% remotely from different LATAM countries. We combine experience in technology, proptech and real estate management.",
+        "contact": "Meet the team"
+      }
+    },
+    "blog": {
+      "title": "Malu Blog",
+      "subtitle": "Insights, trends and best practices for modern condominium management",
+      "featured": {
+        "tag": "Featured",
+        "title": "The Future of Condominium Management in LATAM",
+        "excerpt": "We explore technological trends transforming property administration in Latin America and how condominiums can prepare for the future.",
+        "date": "August 15, 2025",
+        "readTime": "8 min read",
+        "imageAlt": "Illustration about modern condominium management"
+      },
+      "recentTitle": "Recent Articles",
+      "article1": {
+        "category": "Finance",
+        "title": "5 Strategies to Reduce Delinquency in Condominiums",
+        "excerpt": "Proven methods to improve collections and keep your condominium finances in order.",
+        "date": "Dec 10",
+        "readTime": "5 min"
+      },
+      "article2": {
+        "category": "Security",
+        "title": "Digital Access Control: Benefits and Implementation",
+        "excerpt": "How QR codes and digital systems improve security and resident experience.",
+        "date": "Dec 5",
+        "readTime": "6 min"
+      },
+      "article3": {
+        "category": "Technology",
+        "title": "Process Automation in Condominium Management",
+        "excerpt": "Discover which tasks you can automate to save time and reduce administrative errors.",
+        "date": "Dec 1",
+        "readTime": "7 min"
+      },
+      "comingSoon": {
+        "title": "More Content Coming Soon",
+        "description": "We're preparing more articles about condominium management, industry trends and success stories. Subscribe for notifications.",
+        "subscribe": "Subscribe to Blog"
+      }
+    },
+    "contact": {
+      "title": "Contact Malu",
+      "subtitle": "Have questions about our system? Want a personalized demo? We're here to help.",
+      "info": {
+        "title": "Contact Information",
+        "general": {
+          "title": "General Inquiries",
+          "description": "For general information, demos and questions about Malu"
+        },
+        "sales": {
+          "title": "Sales & Commercial",
+          "description": "For quotes, plans and commercial information"
+        },
+        "support": {
+          "title": "Technical Support",
+          "description": "For existing clients with technical questions or issues"
+        },
+        "hours": {
+          "title": "Business Hours",
+          "weekdays": "Monday to Friday: 9:00 - 18:00",
+          "timezone": "Timezone: GMT-6 (Mexico)",
+          "response": "Average response time: 24-48 hours"
+        }
+      },
+      "form": {
+        "title": "Send us a Message",
+        "name": "Full Name",
+        "namePlaceholder": "Your name",
+        "email": "Email",
+        "emailPlaceholder": "your@email.com",
+        "company": "Company/Condominium",
+        "companyPlaceholder": "Your organization name",
+        "subject": "Subject",
+        "subjectSelect": "Select a topic",
+        "subjectDemo": "Request Demo",
+        "subjectPricing": "Pricing Information",
+        "subjectSupport": "Technical Support",
+        "subjectPartnership": "Business Partnership",
+        "subjectOther": "Other",
+        "message": "Message",
+        "messagePlaceholder": "Tell us how we can help you...",
+        "send": "Send Message",
+        "privacy": "By submitting this form, you accept our privacy terms."
       }
     }
   }

@@ -4,9 +4,10 @@ import { Logo } from './ui/Logo';
 interface FooterProps {
   onLegalClick?: (page: 'privacy' | 'terms' | 'cookies' | 'gdpr') => void;
   onResourceClick?: (page: 'guides' | 'support' | 'status') => void;
+  onCompanyClick?: (page: 'about' | 'blog' | 'careers' | 'contact') => void;
 }
 
-export function Footer({ onLegalClick, onResourceClick }: FooterProps) {
+export function Footer({ onLegalClick, onResourceClick, onCompanyClick }: FooterProps) {
   const { t } = useTranslation();
 
   const currentYear = new Date().getFullYear();
@@ -19,23 +20,22 @@ export function Footer({ onLegalClick, onResourceClick }: FooterProps) {
       { name: t('footer.links.security'), href: '#security' }
     ],
     company: [
-      { name: t('footer.links.about'), href: '#about' },
-      { name: t('footer.links.blog'), href: '#blog' },
-      { name: t('footer.links.careers'), href: '#careers' },
-      { name: t('footer.links.contact'), href: '#contact' }
-    ],
+      { name: t('footer.links.about'), href: '#about', action: 'about' as const },
+      { name: t('footer.links.blog'), href: '#blog', action: 'blog' as const },
+      { name: t('footer.links.careers'), href: '#careers', action: 'careers' as const },
+      { name: t('footer.links.contact'), href: '#contact', action: 'contact' as const }
+    ] as Array<{ name: string; href: string; action?: 'about' | 'blog' | 'careers' | 'contact' }>,
     resources: [
-      { name: t('footer.links.documentation'), href: '#docs' },
       { name: t('footer.links.guides'), href: '#guides', action: 'guides' as const },
       { name: t('footer.links.support'), href: '#support', action: 'support' as const },
       { name: t('footer.links.status'), href: '#status', action: 'status' as const }
-    ],
+    ] as Array<{ name: string; href: string; action?: 'guides' | 'support' | 'status' }>,
     legal: [
       { name: t('footer.links.privacy'), href: '#privacy', action: 'privacy' as const },
       { name: t('footer.links.terms'), href: '#terms', action: 'terms' as const },
       { name: t('footer.links.cookies'), href: '#cookies', action: 'cookies' as const },
       { name: t('footer.links.gdpr'), href: '#gdpr', action: 'gdpr' as const }
-    ]
+    ] as Array<{ name: string; href: string; action?: 'privacy' | 'terms' | 'cookies' | 'gdpr' }>
   };
 
   return (
@@ -95,9 +95,18 @@ export function Footer({ onLegalClick, onResourceClick }: FooterProps) {
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors">
-                    {link.name}
-                  </a>
+                  {link.action ? (
+                    <button
+                      onClick={() => link.action && onCompanyClick?.(link.action)}
+                      className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors text-left"
+                    >
+                      {link.name}
+                    </button>
+                  ) : (
+                    <a href={link.href} className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors">
+                      {link.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
@@ -113,7 +122,7 @@ export function Footer({ onLegalClick, onResourceClick }: FooterProps) {
                 <li key={link.name}>
                   {link.action ? (
                     <button
-                      onClick={() => onResourceClick?.(link.action)}
+                      onClick={() => link.action && onResourceClick?.(link.action)}
                       className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors text-left"
                     >
                       {link.name}
@@ -136,10 +145,10 @@ export function Footer({ onLegalClick, onResourceClick }: FooterProps) {
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
-                  <button
-                    onClick={() => onLegalClick?.(link.action)}
-                    className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors text-left"
-                  >
+                                      <button
+                      onClick={() => link.action && onLegalClick?.(link.action)}
+                      className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors text-left"
+                    >
                     {link.name}
                   </button>
                 </li>
