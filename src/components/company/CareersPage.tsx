@@ -3,6 +3,12 @@ import { useTranslation } from 'react-i18next';
 export function CareersPage() {
   const { t } = useTranslation();
 
+  const createMailtoLink = () => {
+    const subject = encodeURIComponent(t('company.careers.position.applySubject'));
+    const body = encodeURIComponent(t('company.careers.position.applyBody'));
+    return `mailto:mauro@holy-code.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <div className="min-h-screen bg-white dark:bg-neutral-900 py-16">
       <div className="max-w-6xl mx-auto px-6">
@@ -64,9 +70,15 @@ export function CareersPage() {
                       </span>
                     </div>
                   </div>
-                  <button className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                  <a 
+                    href={createMailtoLink()}
+                    className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg font-medium transition-colors inline-flex items-center gap-2 hover:shadow-lg"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
                     {t('company.careers.position.apply')}
-                  </button>
+                  </a>
                 </div>
 
                 <p className="text-neutral-600 dark:text-neutral-300 mb-6">
