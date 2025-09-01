@@ -1,20 +1,53 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ArticlePage } from '../blog/ArticlePage';
-import { articles, getFeaturedArticle, getRecentArticles, type Article } from '../../data/articles';
+import { getFeaturedArticle, getRecentArticles, type Article } from '../../data/articles';
+
+// Helper function to get localized article content
+const getLocalizedArticle = (article: Article, language: string) => ({
+  ...article,
+  title: language === 'en' ? article.titleEn || article.title : article.title,
+  excerpt: language === 'en' ? article.excerptEn || article.excerpt : article.excerpt,
+  content: language === 'en' ? article.contentEn || article.content : article.content,
+  category: language === 'en' ? article.categoryEn || article.category : article.category,
+  date: language === 'en' ? article.dateEn || article.date : article.date,
+  readTime: language === 'en' ? article.readTimeEn || article.readTime : article.readTime,
+  tags: language === 'en' ? article.tagsEn || article.tags : article.tags,
+});
 
 export function BlogPage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
+  const [previousScrollPosition, setPreviousScrollPosition] = useState(0);
 
-  const featuredArticle = getFeaturedArticle();
-  const recentArticles = getRecentArticles(3);
+  const currentLanguage = i18n.language;
+  const featuredArticleRaw = getFeaturedArticle();
+  const recentArticlesRaw = getRecentArticles(3);
+
+  const featuredArticle = featuredArticleRaw ? getLocalizedArticle(featuredArticleRaw, currentLanguage) : null;
+  const recentArticles = recentArticlesRaw.map(article => getLocalizedArticle(article, currentLanguage));
+
+  const handleArticleClick = (article: Article) => {
+    // Save current scroll position before opening article
+    setPreviousScrollPosition(window.scrollY);
+    setSelectedArticle(article);
+    // Scroll to top when opening an article
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleBackToBlog = () => {
+    setSelectedArticle(null);
+    // Restore previous scroll position when returning to blog
+    setTimeout(() => {
+      window.scrollTo({ top: previousScrollPosition, behavior: 'smooth' });
+    }, 100);
+  };
 
   if (selectedArticle) {
     return (
       <ArticlePage 
         article={selectedArticle} 
-        onBack={() => setSelectedArticle(null)} 
+        onBack={handleBackToBlog} 
       />
     );
   }
@@ -35,7 +68,7 @@ export function BlogPage() {
          {featuredArticle && (
            <div className="mb-16">
              <div className="bg-gradient-to-r from-primary-50 to-secondary-50 dark:from-primary-900/20 dark:to-secondary-900/20 rounded-2xl p-8 cursor-pointer hover:shadow-lg transition-shadow"
-                  onClick={() => setSelectedArticle(featuredArticle)}>
+                  onClick={() => handleArticleClick(featuredArticle)}>
                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                  <div>
                    <span className="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 text-sm rounded-full mb-4 inline-block">
@@ -100,7 +133,7 @@ export function BlogPage() {
                  <div 
                    key={article.id} 
                    className="bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 overflow-hidden cursor-pointer hover:shadow-lg transition-shadow"
-                   onClick={() => setSelectedArticle(article)}
+                   onClick={() => handleArticleClick(article)}
                  >
                    <div className="bg-neutral-100 dark:bg-neutral-700 p-8 text-center">
                      <div className={`w-12 h-12 ${colorScheme.bg} rounded-lg flex items-center justify-center mx-auto`}>

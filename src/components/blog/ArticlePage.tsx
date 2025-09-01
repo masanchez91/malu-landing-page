@@ -46,8 +46,8 @@ export function ArticlePage({ article, onBack }: ArticlePageProps) {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-neutral-900 py-16">
-      <div className="max-w-4xl mx-auto px-6">
+    <div className="min-h-screen bg-white dark:bg-neutral-900 py-12">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Back Button */}
         <button
           onClick={onBack}
@@ -60,7 +60,7 @@ export function ArticlePage({ article, onBack }: ArticlePageProps) {
         </button>
 
         {/* Article Header */}
-        <header className="mb-12">
+        <header className="mb-16 max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-4">
             <span className="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 text-sm rounded-full">
               {article.category}
@@ -135,13 +135,16 @@ export function ArticlePage({ article, onBack }: ArticlePageProps) {
         </header>
 
         {/* Article Content */}
-        <article className="prose prose-lg prose-neutral dark:prose-invert max-w-none">
-          <div dangerouslySetInnerHTML={{ __html: article.content }} />
+        <article className="max-w-none mb-16">
+          <div 
+            className="article-content"
+            dangerouslySetInnerHTML={{ __html: article.content }} 
+          />
         </article>
 
         {/* Tags */}
         {article.tags.length > 0 && (
-          <div className="mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-700">
+          <div className="mt-16 pt-8 border-t border-neutral-200 dark:border-neutral-700 max-w-4xl mx-auto">
             <h3 className="text-lg font-semibold text-neutral-900 dark:text-white mb-4">
               {t('blog.tags')}
             </h3>
@@ -159,7 +162,7 @@ export function ArticlePage({ article, onBack }: ArticlePageProps) {
         )}
 
         {/* Call to Action */}
-        <div className="mt-16 bg-gradient-to-r from-primary-50 to-secondary-50 dark:from-primary-900/20 dark:to-secondary-900/20 rounded-2xl p-8 text-center">
+        <div className="mt-20 bg-gradient-to-r from-primary-50 to-secondary-50 dark:from-primary-900/20 dark:to-secondary-900/20 rounded-2xl p-12 text-center max-w-4xl mx-auto">
           <h3 className="text-xl font-bold text-neutral-900 dark:text-white mb-4">
             {t('blog.cta.title')}
           </h3>
