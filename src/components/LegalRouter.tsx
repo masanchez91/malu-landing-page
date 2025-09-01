@@ -10,8 +10,11 @@ import { AboutPage } from './company/AboutPage';
 import { BlogPage } from './company/BlogPage';
 import { CareersPage } from './company/CareersPage';
 import { ContactPage } from './company/ContactPage';
+import { FeaturesPage } from './product/FeaturesPage';
+import { IntegrationsPage } from './product/IntegrationsPage';
+import { SecurityPage } from './product/SecurityPage';
 
-type PageType = 'privacy' | 'terms' | 'cookies' | 'gdpr' | 'guides' | 'support' | 'status' | 'about' | 'blog' | 'careers' | 'contact' | null;
+type PageType = 'privacy' | 'terms' | 'cookies' | 'gdpr' | 'guides' | 'support' | 'status' | 'about' | 'blog' | 'careers' | 'contact' | 'features' | 'integrations' | 'security' | null;
 
 interface LegalRouterProps {
   activePage: PageType;
@@ -45,6 +48,12 @@ export function LegalRouter({ activePage, onClose }: LegalRouterProps) {
         return <CareersPage />;
       case 'contact':
         return <ContactPage />;
+      case 'features':
+        return <FeaturesPage />;
+      case 'integrations':
+        return <IntegrationsPage />;
+      case 'security':
+        return <SecurityPage />;
       default:
         return null;
     }

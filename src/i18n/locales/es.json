@@ -80,7 +80,6 @@
     "links": {
       "features": "Funcionalidades",
       "integrations": "Integraciones",
-      "api": "API",
       "security": "Seguridad",
       "about": "Acerca de",
       "blog": "Blog",
@@ -530,6 +529,163 @@
       "title": "¿Te interesa Malu para tu condominio?",
       "description": "Contáctanos para una demo personalizada y descubre cómo podemos ayudarte",
       "contact": "Contactar"
+    }
+  },
+  "product": {
+    "features": {
+      "title": "Funcionalidades",
+      "subtitle": "Descubre todas las herramientas que Malu pone a tu disposición para simplificar la gestión de tu condominio.",
+      "financial": {
+        "title": "Gestión Financiera",
+        "description": "Automatiza el proceso de cobranza y mantén un control total sobre las finanzas del condominio.",
+        "feature1": "Generación automática de cuotas",
+        "feature2": "Múltiples métodos de pago",
+        "feature3": "Reportes financieros detallados"
+      },
+      "access": {
+        "title": "Control de Acceso",
+        "description": "Sistema digital de códigos QR para visitantes y control total de accesos.",
+        "feature1": "Códigos QR temporales",
+        "feature2": "Registro de visitantes",
+        "feature3": "Notificaciones automáticas"
+      },
+      "communication": {
+        "title": "Comunicación",
+        "description": "Mantén informados a todos los residentes con anuncios centralizados y notificaciones.",
+        "feature1": "Anuncios dirigidos",
+        "feature2": "Notificaciones WhatsApp",
+        "feature3": "Buzón de sugerencias"
+      },
+      "maintenance": {
+        "title": "Mantenimiento",
+        "description": "Gestiona reportes de mantenimiento y programa tareas preventivas.",
+        "feature1": "Sistema de tickets",
+        "feature2": "Mantenimiento preventivo",
+        "feature3": "Seguimiento en tiempo real"
+      },
+      "reservations": {
+        "title": "Reservas",
+        "description": "Calendario inteligente para la gestión de amenidades y espacios comunes.",
+        "feature1": "Calendario en tiempo real",
+        "feature2": "Reglas personalizables",
+        "feature3": "Confirmaciones automáticas"
+      },
+      "analytics": {
+        "title": "Análisis y Reportes",
+        "description": "Métricas detalladas y reportes para una mejor toma de decisiones.",
+        "feature1": "Dashboard en tiempo real",
+        "feature2": "Reportes personalizados",
+        "feature3": "Métricas de rendimiento"
+      },
+      "cta": {
+        "title": "¿Listo para transformar tu condominio?",
+        "description": "Descubre cómo nuestras funcionalidades pueden simplificar tu gestión diaria.",
+        "button": "Solicitar Demo"
+      }
+    },
+    "integrations": {
+      "title": "Integraciones",
+      "subtitle": "Conecta Malu con las herramientas y servicios que ya utilizas para una experiencia perfecta.",
+      "payments": {
+        "title": "Métodos de Pago",
+        "mercadopago": "Pagos digitales líder en LATAM",
+        "stripe": "Pagos internacionales seguros",
+        "paypal": "Pagos globales confiables"
+      },
+      "communication": {
+        "title": "Comunicación",
+        "whatsapp": "Notificaciones automáticas vía WhatsApp",
+        "email": "Campañas de email automatizadas",
+        "sms": "Mensajes de texto inmediatos"
+      },
+      "banking": {
+        "title": "Bancos y Entidades Financieras",
+        "more": "Más bancos"
+      },
+      "webhooks": {
+        "title": "Webhooks y APIs",
+        "description": "Integra Malu con tus sistemas existentes mediante nuestras APIs y webhooks.",
+        "realtime": "Eventos en Tiempo Real",
+        "realtimeDesc": "Recibe notificaciones instantáneas de cambios",
+        "custom": "Integraciones Personalizadas",
+        "customDesc": "Desarrolla integraciones específicas para tu negocio",
+        "secure": "Conexiones Seguras",
+        "secureDesc": "Todas las comunicaciones están encriptadas"
+      },
+      "cta": {
+        "title": "¿Necesitas una integración específica?",
+        "description": "Nuestro equipo puede ayudarte a conectar Malu con cualquier sistema que necesites.",
+        "button": "Consultar Integración"
+      }
+    },
+    "security": {
+      "title": "Seguridad",
+      "subtitle": "La seguridad de tus datos es nuestra prioridad. Conoce todas las medidas que implementamos para proteger tu información.",
+      "encryption": {
+        "title": "Encriptación de Datos",
+        "description": "Todos los datos se encriptan tanto en tránsito como en reposo.",
+        "feature1": "Encriptación AES-256",
+        "feature2": "Certificados SSL/TLS",
+        "feature3": "Llaves de encriptación rotativas"
+      },
+      "access": {
+        "title": "Control de Acceso",
+        "description": "Sistema robusto de autenticación y autorización.",
+        "feature1": "Autenticación multifactor",
+        "feature2": "Roles y permisos granulares",
+        "feature3": "Tokens de sesión seguros"
+      },
+      "monitoring": {
+        "title": "Monitoreo 24/7",
+        "description": "Vigilancia continua de la infraestructura y detección de amenazas.",
+        "feature1": "Detección de intrusiones",
+        "feature2": "Logs de seguridad",
+        "feature3": "Alertas en tiempo real"
+      },
+      "backup": {
+        "title": "Respaldos y Recuperación",
+        "description": "Sistemas redundantes para garantizar la disponibilidad de datos.",
+        "feature1": "Respaldos automáticos diarios",
+        "feature2": "Múltiples centros de datos",
+        "feature3": "Plan de recuperación de desastres"
+      },
+      "compliance": {
+        "title": "Cumplimiento Normativo",
+        "description": "Adherencia a estándares internacionales de seguridad.",
+        "feature1": "Políticas de privacidad",
+        "feature2": "Auditorías regulares",
+        "feature3": "Documentación completa"
+      },
+      "infrastructure": {
+        "title": "Infraestructura Segura",
+        "description": "Hosting en proveedores cloud certificados y seguros.",
+        "feature1": "AWS con certificación SOC 2",
+        "feature2": "CDN global para rendimiento",
+        "feature3": "Firewall de aplicaciones web"
+      },
+      "certifications": {
+        "title": "Certificaciones y Estándares",
+        "iso": "Gestión de seguridad",
+        "soc": "Controles de seguridad",
+        "pci": "Seguridad de pagos",
+        "gdpr": "Protección de datos"
+      },
+      "practices": {
+        "title": "Mejores Prácticas de Seguridad",
+        "development": "Desarrollo Seguro",
+        "dev1": "Revisión de código por pares",
+        "dev2": "Pruebas de seguridad automatizadas",
+        "dev3": "Análisis de vulnerabilidades",
+        "operations": "Operaciones Seguras",
+        "ops1": "Acceso con privilegios mínimos",
+        "ops2": "Actualizaciones de seguridad regulares",
+        "ops3": "Capacitación continua del equipo"
+      },
+      "cta": {
+        "title": "¿Tienes preguntas sobre seguridad?",
+        "description": "Nuestro equipo de seguridad está disponible para resolver cualquier duda que tengas.",
+        "button": "Contactar Seguridad"
+      }
     }
   }
 }

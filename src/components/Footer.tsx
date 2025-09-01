@@ -5,20 +5,20 @@ interface FooterProps {
   onLegalClick?: (page: 'privacy' | 'terms' | 'cookies' | 'gdpr') => void;
   onResourceClick?: (page: 'guides' | 'support' | 'status') => void;
   onCompanyClick?: (page: 'about' | 'blog' | 'careers' | 'contact') => void;
+  onProductClick?: (page: 'features' | 'integrations' | 'security') => void;
 }
 
-export function Footer({ onLegalClick, onResourceClick, onCompanyClick }: FooterProps) {
+export function Footer({ onLegalClick, onResourceClick, onCompanyClick, onProductClick }: FooterProps) {
   const { t } = useTranslation();
 
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     product: [
-      { name: t('footer.links.features'), href: '#features' },
-      { name: t('footer.links.integrations'), href: '#integrations' },
-      { name: t('footer.links.api'), href: '#api' },
-      { name: t('footer.links.security'), href: '#security' }
-    ],
+      { name: t('footer.links.features'), href: '#features', action: 'features' as const },
+      { name: t('footer.links.integrations'), href: '#integrations', action: 'integrations' as const },
+      { name: t('footer.links.security'), href: '#security', action: 'security' as const }
+    ] as Array<{ name: string; href: string; action?: 'features' | 'integrations' | 'security' }>,
     company: [
       { name: t('footer.links.about'), href: '#about', action: 'about' as const },
       { name: t('footer.links.blog'), href: '#blog', action: 'blog' as const },
@@ -79,9 +79,18 @@ export function Footer({ onLegalClick, onResourceClick, onCompanyClick }: Footer
             <ul className="space-y-3">
               {footerLinks.product.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors">
-                    {link.name}
-                  </a>
+                  {link.action ? (
+                    <button
+                      onClick={() => link.action && onProductClick?.(link.action)}
+                      className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors text-left"
+                    >
+                      {link.name}
+                    </button>
+                  ) : (
+                    <a href={link.href} className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors">
+                      {link.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

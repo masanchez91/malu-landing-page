@@ -80,7 +80,6 @@
     "links": {
       "features": "Features",
       "integrations": "Integrations",
-      "api": "API",
       "security": "Security",
       "about": "About",
       "blog": "Blog",
@@ -530,6 +529,163 @@
       "title": "Interested in Malu for your condominium?",
       "description": "Contact us for a personalized demo and discover how we can help you",
       "contact": "Contact"
+    }
+  },
+  "product": {
+    "features": {
+      "title": "Features",
+      "subtitle": "Discover all the tools that Malu provides to simplify your condominium management.",
+      "financial": {
+        "title": "Financial Management",
+        "description": "Automate the collection process and maintain total control over condominium finances.",
+        "feature1": "Automatic fee generation",
+        "feature2": "Multiple payment methods",
+        "feature3": "Detailed financial reports"
+      },
+      "access": {
+        "title": "Access Control",
+        "description": "Digital QR code system for visitors and complete access control.",
+        "feature1": "Temporary QR codes",
+        "feature2": "Visitor registration",
+        "feature3": "Automatic notifications"
+      },
+      "communication": {
+        "title": "Communication",
+        "description": "Keep all residents informed with centralized announcements and notifications.",
+        "feature1": "Targeted announcements",
+        "feature2": "WhatsApp notifications",
+        "feature3": "Suggestion box"
+      },
+      "maintenance": {
+        "title": "Maintenance",
+        "description": "Manage maintenance reports and schedule preventive tasks.",
+        "feature1": "Ticket system",
+        "feature2": "Preventive maintenance",
+        "feature3": "Real-time tracking"
+      },
+      "reservations": {
+        "title": "Reservations",
+        "description": "Smart calendar for amenities and common spaces management.",
+        "feature1": "Real-time calendar",
+        "feature2": "Customizable rules",
+        "feature3": "Automatic confirmations"
+      },
+      "analytics": {
+        "title": "Analytics & Reports",
+        "description": "Detailed metrics and reports for better decision making.",
+        "feature1": "Real-time dashboard",
+        "feature2": "Custom reports",
+        "feature3": "Performance metrics"
+      },
+      "cta": {
+        "title": "Ready to transform your condominium?",
+        "description": "Discover how our features can simplify your daily management.",
+        "button": "Request Demo"
+      }
+    },
+    "integrations": {
+      "title": "Integrations",
+      "subtitle": "Connect Malu with the tools and services you already use for a seamless experience.",
+      "payments": {
+        "title": "Payment Methods",
+        "mercadopago": "Leading digital payments in LATAM",
+        "stripe": "Secure international payments",
+        "paypal": "Reliable global payments"
+      },
+      "communication": {
+        "title": "Communication",
+        "whatsapp": "Automatic WhatsApp notifications",
+        "email": "Automated email campaigns",
+        "sms": "Instant text messages"
+      },
+      "banking": {
+        "title": "Banks & Financial Institutions",
+        "more": "More banks"
+      },
+      "webhooks": {
+        "title": "Webhooks & APIs",
+        "description": "Integrate Malu with your existing systems through our APIs and webhooks.",
+        "realtime": "Real-time Events",
+        "realtimeDesc": "Receive instant notifications of changes",
+        "custom": "Custom Integrations",
+        "customDesc": "Develop specific integrations for your business",
+        "secure": "Secure Connections",
+        "secureDesc": "All communications are encrypted"
+      },
+      "cta": {
+        "title": "Need a specific integration?",
+        "description": "Our team can help you connect Malu with any system you need.",
+        "button": "Consult Integration"
+      }
+    },
+    "security": {
+      "title": "Security",
+      "subtitle": "The security of your data is our priority. Learn about all the measures we implement to protect your information.",
+      "encryption": {
+        "title": "Data Encryption",
+        "description": "All data is encrypted both in transit and at rest.",
+        "feature1": "AES-256 encryption",
+        "feature2": "SSL/TLS certificates",
+        "feature3": "Rotating encryption keys"
+      },
+      "access": {
+        "title": "Access Control",
+        "description": "Robust authentication and authorization system.",
+        "feature1": "Multi-factor authentication",
+        "feature2": "Granular roles and permissions",
+        "feature3": "Secure session tokens"
+      },
+      "monitoring": {
+        "title": "24/7 Monitoring",
+        "description": "Continuous infrastructure monitoring and threat detection.",
+        "feature1": "Intrusion detection",
+        "feature2": "Security logs",
+        "feature3": "Real-time alerts"
+      },
+      "backup": {
+        "title": "Backup & Recovery",
+        "description": "Redundant systems to ensure data availability.",
+        "feature1": "Daily automatic backups",
+        "feature2": "Multiple data centers",
+        "feature3": "Disaster recovery plan"
+      },
+      "compliance": {
+        "title": "Regulatory Compliance",
+        "description": "Adherence to international security standards.",
+        "feature1": "Privacy policies",
+        "feature2": "Regular audits",
+        "feature3": "Complete documentation"
+      },
+      "infrastructure": {
+        "title": "Secure Infrastructure",
+        "description": "Hosting on certified and secure cloud providers.",
+        "feature1": "AWS with SOC 2 certification",
+        "feature2": "Global CDN for performance",
+        "feature3": "Web application firewall"
+      },
+      "certifications": {
+        "title": "Certifications & Standards",
+        "iso": "Security management",
+        "soc": "Security controls",
+        "pci": "Payment security",
+        "gdpr": "Data protection"
+      },
+      "practices": {
+        "title": "Security Best Practices",
+        "development": "Secure Development",
+        "dev1": "Peer code review",
+        "dev2": "Automated security testing",
+        "dev3": "Vulnerability analysis",
+        "operations": "Secure Operations",
+        "ops1": "Least privilege access",
+        "ops2": "Regular security updates",
+        "ops3": "Continuous team training"
+      },
+      "cta": {
+        "title": "Have security questions?",
+        "description": "Our security team is available to answer any questions you may have.",
+        "button": "Contact Security"
+      }
     }
   }
 }
