@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ArticlePage } from '../blog/ArticlePage';
 import { getFeaturedArticle, getRecentArticles, type Article } from '../../data/articles';
@@ -27,12 +27,46 @@ export function BlogPage() {
   const featuredArticle = featuredArticleRaw ? getLocalizedArticle(featuredArticleRaw, currentLanguage) : null;
   const recentArticles = recentArticlesRaw.map(article => getLocalizedArticle(article, currentLanguage));
 
+  // AGGRESSIVE scroll to top when an article is selected
+  useEffect(() => {
+    if (selectedArticle) {
+      const forceScrollTop = () => {
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+        window.scrollTo(0, 0);
+        window.scrollTo({ top: 0, behavior: 'auto' });
+        
+        // Try different scroll targets
+        const html = document.querySelector('html');
+        const body = document.querySelector('body');
+        if (html) html.scrollTop = 0;
+        if (body) body.scrollTop = 0;
+      };
+      
+      // Execute immediately
+      forceScrollTop();
+      
+      // Execute multiple times with different delays
+      requestAnimationFrame(forceScrollTop);
+      setTimeout(forceScrollTop, 0);
+      setTimeout(forceScrollTop, 1);
+      setTimeout(forceScrollTop, 10);
+      setTimeout(forceScrollTop, 50);
+      setTimeout(forceScrollTop, 100);
+    }
+  }, [selectedArticle]);
+
   const handleArticleClick = (article: Article) => {
     // Save current scroll position before opening article
     setPreviousScrollPosition(window.scrollY);
+    
+    // FORCE scroll to top BEFORE changing state
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    window.scrollTo(0, 0);
+    
+    // Set the article state
     setSelectedArticle(article);
-    // Scroll to top when opening an article
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleBackToBlog = () => {

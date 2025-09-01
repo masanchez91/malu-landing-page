@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
+import { useScrollToTop } from '../../hooks/useScrollToTop';
 
 interface Article {
   id: string;
@@ -19,6 +21,54 @@ interface ArticlePageProps {
 
 export function ArticlePage({ article, onBack }: ArticlePageProps) {
   const { t } = useTranslation();
+  
+  // Use the nuclear scroll to top hook
+  useScrollToTop(article.id);
+
+  // AGGRESSIVE scroll to top - multiple approaches
+  useEffect(() => {
+    const scrollToTop = () => {
+      // Method 1: Direct property setting
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      
+      // Method 2: Window scroll methods
+      window.scrollTo(0, 0);
+      window.scrollTo({ top: 0, behavior: 'auto' });
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      
+      // Method 3: Try with both html and body
+      const html = document.querySelector('html');
+      const body = document.querySelector('body');
+      if (html) html.scrollTop = 0;
+      if (body) body.scrollTop = 0;
+    };
+
+    // Execute immediately
+    scrollToTop();
+    
+    // Execute with requestAnimationFrame (next frame)
+    requestAnimationFrame(() => {
+      scrollToTop();
+    });
+    
+    // Execute with multiple timeouts as backup
+    setTimeout(() => scrollToTop(), 0);
+    setTimeout(() => scrollToTop(), 10);
+    setTimeout(() => scrollToTop(), 50);
+    setTimeout(() => scrollToTop(), 100);
+    
+    // Force focus to top of page
+    const topElement = document.getElementById('article-top') || document.body;
+    topElement.focus({ preventScroll: false });
+    
+    // Additional method: try to scroll the main container
+    const mainContainer = document.querySelector('.min-h-screen');
+    if (mainContainer) {
+      mainContainer.scrollTop = 0;
+    }
+    
+  }, [article.id]);
 
   const shareOnTwitter = () => {
     const url = window.location.href;
@@ -46,7 +96,11 @@ export function ArticlePage({ article, onBack }: ArticlePageProps) {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-neutral-900 py-12">
+    <div 
+      className="min-h-screen bg-white dark:bg-neutral-900 py-12 article-page" 
+      style={{ scrollBehavior: 'auto' }}
+      id="article-top"
+    >
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Back Button */}
         <button

@@ -17,6 +17,16 @@ html {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
+/* Force scroll behavior for article pages */
+.article-page {
+  scroll-behavior: auto !important;
+}
+
+.article-page html,
+.article-page body {
+  scroll-behavior: auto !important;
+}
+
 body {
   font-feature-settings: "cv01", "cv03", "cv04", "cv09";
   text-rendering: optimizeLegibility;
