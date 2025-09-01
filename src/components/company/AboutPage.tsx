@@ -77,14 +77,14 @@ export function AboutPage() {
                     {t('company.about.story.remote')}
                   </div>
                 </div>
-                <div>
-                  <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">
-                    +1K
-                  </div>
-                  <div className="text-sm text-neutral-600 dark:text-neutral-400">
-                    {t('company.about.story.units')}
-                  </div>
-                </div>
+                                 <div>
+                   <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">
+                     3
+                   </div>
+                   <div className="text-sm text-neutral-600 dark:text-neutral-400">
+                     {t('company.about.story.betaUsers')}
+                   </div>
+                 </div>
               </div>
             </div>
           </div>

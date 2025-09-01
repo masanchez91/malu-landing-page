@@ -417,7 +417,8 @@
         "founded": "Fundada",
         "focus": "Enfoque",
         "remote": "Remoto",
-        "units": "Unidades"
+        "beta": "Beta",
+        "betaUsers": "Usuarios selectos"
       },
       "values": {
         "title": "Nuestros Valores",

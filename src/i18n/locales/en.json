@@ -417,7 +417,8 @@
         "founded": "Founded",
         "focus": "Focus",
         "remote": "Remote",
-        "units": "Units"
+        "beta": "Beta",
+        "betaUsers": "Selected users"
       },
       "values": {
         "title": "Our Values",
