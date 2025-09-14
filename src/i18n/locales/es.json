@@ -7,10 +7,10 @@
     "menu": "Abrir menú"
   },
   "hero": {
-    "badge": "Listo en minutos",
-    "title": "La administración de tu condominio,",
-    "titleHighlight": "en piloto automático.",
-    "description": "Cobranza automática, accesos digitales y comunicación centralizada — todo en una plataforma segura, rápida y escalable pensada para condominios en LATAM.",
+    "badge": "Software Administración Condominios México",
+    "title": "Software Administración Condominios",
+    "titleHighlight": "México y LATAM #1",
+    "description": "Automatización cobranza condominios, control acceso QR, reservas amenidades y comunicación residentes-administradores. Evita conflictos vecinos y ahorra 80% del tiempo en administración condominios Guadalajara, CDMX y toda LATAM.",
     "tryButton": "Probar Malu",
     "demoButton": "Solicitar demo",
     "stat1Label": "Reduce morosidad",
@@ -35,14 +35,14 @@
     "hallTime": "Salón: 19:00 - 21:00"
   },
   "features": {
-    "block1Title": "Cobranza Inteligente",
-    "block1Desc": "Cuotas automáticas, recordatorios y reportes financieros en tiempo real.",
-    "block2Title": "Accesos Digitales",
-    "block2Desc": "QR temporales, validación en tiempo real y bitácoras auditables.",
-    "block3Title": "Reservas Inteligentes",
-    "block3Desc": "Calendario con reglas, confirmaciones y prevención de choques de horario.",
-    "block4Title": "Comunicación Centralizada",
-    "block4Desc": "Anuncios segmentados, notificaciones push y buzón de sugerencias."
+    "block1Title": "Pago Cuotas Condominios Online",
+    "block1Desc": "Automatización cobranza condominios: cuotas automáticas, recordatorios y transparencia financiera condominio con reportes financieros condominios en tiempo real.",
+    "block2Title": "Control Acceso Condominios QR",
+    "block2Desc": "Control accesos QR condominios: códigos temporales, validación tiempo real y logs auditables para máxima seguridad en condominios.",
+    "block3Title": "Reservas Amenidades Condominios",
+    "block3Desc": "Sistema reservas amenidades condominios: calendario inteligente, reglas automáticas y prevención conflictos horarios entre residentes.",
+    "block4Title": "Comunicación Residentes Administradores",
+    "block4Desc": "Evitar conflictos vecinos administración: avisos segmentados, notificaciones automáticas condominios y buzón sugerencias para mejor comunicación."
   },
   "insights": {
     "title": "Dashboard — Insights",
@@ -104,8 +104,11 @@
     "tagline": "Sistema Integral de Gestión de Condominios"
   },
   "seo": {
-    "title": "Malu - Sistema de Gestión de Condominios #1 en LATAM | Cobranza Automática",
-    "description": "★ Malu es el sistema #1 de gestión de condominios en LATAM. Cobranza automática, accesos digitales QR, reservas inteligentes. ¡Prueba gratis y reduce morosidad 31%!"
+    "title": "Software Administración Condominios México | Malu #1 LATAM | Control Acceso QR",
+    "description": "★ Software administración condominios México y LATAM. Automatización cobranza, control acceso QR, reservas amenidades. Evita conflictos vecinos. Prueba gratis - Reduce morosidad 31%",
+    "keywords": "software administración condominios, gestión condominios LATAM, control acceso condominios, pago cuotas condominios online, reservas amenidades condominios, automatización cobranza condominios, administración condominios Guadalajara, software condominios CDMX, evitar conflictos vecinos administración, transparencia financiera condominio, ahorrar tiempo administradores condominios",
+    "ogTitle": "Malu - Software Administración Condominios México y LATAM #1",
+    "ogDescription": "Plataforma líder para administración de condominios: cobranza automática, control acceso QR, reservas amenidades. Reduce morosidad 31%. Prueba gratis en México y LATAM."
   },
   "legal": {
     "privacy": {
@@ -716,6 +719,34 @@
     "almostFull": "¡Cupo casi completo!",
     "spotsRemaining": "Solo {{count}} lugares disponibles",
     "joinNowButton": "¡Únete ya!",
+    "faq": {
+      "title": "Preguntas Frecuentes - Software Administración Condominios México",
+      "subtitle": "Respuestas a las dudas más comunes sobre gestión condominios LATAM",
+      "q1": {
+        "question": "¿Cómo automatizar pago de cuotas en condominios?",
+        "answer": "Con Malu puedes automatizar cobranza condominios completamente: configuras cuotas automáticas, recordatorios por WhatsApp/email, y los residentes pagan online desde su celular. Reduce morosidad 31% y ahorra 80% del tiempo en administración."
+      },
+      "q2": {
+        "question": "¿Cómo controlar accesos con QR en condominios?",
+        "answer": "El control acceso condominios QR de Malu genera códigos temporales para visitantes, valida en tiempo real y mantiene logs auditables. Los residentes pueden crear QR desde su app y los guardias validan con tablet/celular."
+      },
+      "q3": {
+        "question": "¿Cómo evitar conflictos vecinos administración?",
+        "answer": "Malu mejora comunicación residentes-administradores con avisos segmentados, buzón de sugerencias anónimo, notificaciones automáticas y transparencia financiera condominio. Los conflictos se reducen con información clara y oportuna."
+      },
+      "q4": {
+        "question": "¿Software administración condominios funciona en Guadalajara y CDMX?",
+        "answer": "Sí, Malu es el software condominios México líder. Funciona en administración condominios Guadalajara, CDMX y toda LATAM. Tenemos clientes desde Monterrey hasta Buenos Aires con soporte local."
+      },
+      "q5": {
+        "question": "¿Cómo funciona sistema reservas amenidades condominios?",
+        "answer": "El sistema reservas amenidades permite a residentes reservar salón, piscina, gym desde su app. Evita conflictos horarios, maneja reglas automáticas (máximo horas, anticipación) y confirma reservas instantáneamente."
+      },
+      "q6": {
+        "question": "¿Cuánto tiempo ahorra software gestión condominios LATAM?",
+        "answer": "Los administradores ahorran 80% del tiempo con automatización cobranza condominios, reportes financieros automáticos, comunicación centralizada y control accesos digitales. Lo que tomaba días, ahora son minutos."
+      }
+    },
     "whatsappMessages": {
       "header": "¡Hola! Me gustaría solicitar una demo de Malu desde el header. ¿Cuándo podríamos agendar una presentación?",
       "headerMobile": "¡Hola! Me gustaría solicitar una demo de Malu desde móvil. ¿Cuándo podríamos agendar una presentación?",

@@ -7,10 +7,10 @@
     "menu": "Open menu"
   },
   "hero": {
-    "badge": "Ready in minutes",
-    "title": "Your condominium management,",
-    "titleHighlight": "on autopilot.",
-    "description": "Automatic billing, digital access and centralized communication — all in one secure, fast and scalable platform designed for condominiums in LATAM.",
+    "badge": "Condominium Management Software Mexico",
+    "title": "Condominium Management Software",
+    "titleHighlight": "Mexico & LATAM #1",
+    "description": "Billing automation condos, QR access control, amenity reservations and resident-manager communication. Avoid neighbor conflicts and save 80% time in condominium management Guadalajara, Mexico City and all LATAM.",
     "tryButton": "Try Malu",
     "demoButton": "Request demo",
     "stat1Label": "Reduces delinquency",
@@ -35,14 +35,14 @@
     "hallTime": "Hall: 7:00 PM - 9:00 PM"
   },
   "features": {
-    "block1Title": "Smart Collection",
-    "block1Desc": "Automatic fees, reminders and real-time financial reports.",
-    "block2Title": "Digital Access",
-    "block2Desc": "Temporary QR codes, real-time validation and auditable logs.",
-    "block3Title": "Smart Reservations",
-    "block3Desc": "Calendar with rules, confirmations and schedule conflict prevention.",
-    "block4Title": "Centralized Communication",
-    "block4Desc": "Segmented announcements, push notifications and suggestion box."
+    "block1Title": "Online Payment Condos",
+    "block1Desc": "Billing automation condos: automatic fees, reminders and financial transparency condominiums with real-time financial reports condominiums.",
+    "block2Title": "QR Access Control Condominiums",
+    "block2Desc": "QR access control condos: temporary codes, real-time validation and auditable logs for maximum condominium security.",
+    "block3Title": "Amenity Reservations System",
+    "block3Desc": "Amenity reservations system condos: smart calendar, automatic rules and schedule conflict prevention between residents.",
+    "block4Title": "Resident Manager Communication",
+    "block4Desc": "Avoid neighbor conflicts management: segmented announcements, automatic condominium notifications and suggestion box for better communication."
   },
   "insights": {
     "title": "Dashboard — Insights",
@@ -104,8 +104,11 @@
     "tagline": "Comprehensive Condominium Management System"
   },
   "seo": {
-    "title": "Malu - #1 Condominium Management System in LATAM | Automatic Billing",
-    "description": "★ Malu is the #1 condominium management system in LATAM. Automatic billing, digital QR access, smart reservations. Try free and reduce delinquency 31%!"
+    "title": "Condominium Management Software Mexico | Malu #1 LATAM | QR Access Control",
+    "description": "★ Condominium management software Mexico & LATAM. Billing automation, QR access control, amenity reservations. Avoid neighbor conflicts. Free trial - Reduce delinquency 31%",
+    "keywords": "condominium management software, property management LATAM, access control condominiums, online payment condos, amenity reservations system, billing automation condos, condominium management Guadalajara, condo software Mexico City, avoid neighbor conflicts management, financial transparency condominiums, save time property managers",
+    "ogTitle": "Malu - Condominium Management Software Mexico & LATAM #1",
+    "ogDescription": "Leading platform for condominium management: automatic billing, QR access control, amenity reservations. Reduce delinquency 31%. Free trial in Mexico & LATAM."
   },
   "legal": {
     "privacy": {
@@ -716,6 +719,34 @@
     "almostFull": "Almost full!",
     "spotsRemaining": "Only {{count}} spots available",
     "joinNowButton": "Join now!",
+    "faq": {
+      "title": "FAQ - Condominium Management Software Mexico",
+      "subtitle": "Answers to common questions about property management LATAM",
+      "q1": {
+        "question": "How to automate condo billing payments?",
+        "answer": "With Malu you can fully automate condominium billing: set automatic fees, WhatsApp/email reminders, and residents pay online from their phones. Reduce delinquency 31% and save 80% administrative time."
+      },
+      "q2": {
+        "question": "How to control access with QR in condominiums?",
+        "answer": "Malu's QR access control condos generates temporary codes for visitors, validates in real-time and maintains auditable logs. Residents create QR from their app and guards validate with tablet/phone."
+      },
+      "q3": {
+        "question": "How to avoid neighbor conflicts management?",
+        "answer": "Malu improves resident-manager communication with segmented announcements, anonymous suggestion box, automatic notifications and financial transparency condominiums. Conflicts reduce with clear, timely information."
+      },
+      "q4": {
+        "question": "Does condominium management software work in Guadalajara and Mexico City?",
+        "answer": "Yes, Malu is the leading condo software Mexico. Works in condominium management Guadalajara, Mexico City and all LATAM. We have clients from Monterrey to Buenos Aires with local support."
+      },
+      "q5": {
+        "question": "How does amenity reservations system condos work?",
+        "answer": "The amenity reservations system lets residents book hall, pool, gym from their app. Prevents schedule conflicts, handles automatic rules (max hours, advance booking) and confirms reservations instantly."
+      },
+      "q6": {
+        "question": "How much time saves property management software LATAM?",
+        "answer": "Property managers save 80% time with billing automation condos, automatic financial reports, centralized communication and digital access control. What took days, now takes minutes."
+      }
+    },
     "whatsappMessages": {
       "header": "Hello! I would like to request a Malu demo from the header. When could we schedule a presentation?",
       "headerMobile": "Hello! I would like to request a Malu demo from mobile. When could we schedule a presentation?",

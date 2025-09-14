@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Features } from './components/Features';
 import { DashboardPreview } from './components/DashboardPreview';
+import { FAQ } from './components/FAQ';
 import { CTA } from './components/CTA';
 import { Footer } from './components/Footer';
 import { LegalRouter } from './components/LegalRouter';
@@ -54,10 +55,22 @@ function App() {
         <Helmet>
           <title>{t('seo.title').toString()}</title>
           <meta name="description" content={t('seo.description').toString()} />
-          <meta property="og:title" content={t('seo.title').toString()} />
-          <meta property="og:description" content={t('seo.description').toString()} />
-          <meta property="twitter:title" content={t('seo.title').toString()} />
-          <meta property="twitter:description" content={t('seo.description').toString()} />
+          <meta name="keywords" content={t('seo.keywords').toString()} />
+          
+          {/* Open Graph optimizado */}
+          <meta property="og:title" content={t('seo.ogTitle').toString()} />
+          <meta property="og:description" content={t('seo.ogDescription').toString()} />
+          <meta property="og:type" content="website" />
+          <meta property="og:locale" content={i18n.language === 'es' ? 'es_ES' : 'en_US'} />
+          
+          {/* Twitter optimizado */}
+          <meta name="twitter:title" content={t('seo.ogTitle').toString()} />
+          <meta name="twitter:description" content={t('seo.ogDescription').toString()} />
+          <meta name="twitter:card" content="summary_large_image" />
+          
+          {/* Geo-targeting */}
+          <meta name="geo.region" content={i18n.language === 'es' ? 'MX' : 'LATAM'} />
+          <meta name="geo.placename" content={i18n.language === 'es' ? 'México' : 'Latin America'} />
         </Helmet>
 
         {/* Pages overlay */}
@@ -68,10 +81,11 @@ function App() {
             <Header onPricingClick={handlePricingClick} onBetaClick={handleBetaClick} />
           
           <main className="max-w-7xl mx-auto px-6 pb-24">
-            <Hero />
-            <Features />
-            <DashboardPreview />
-            <CTA />
+          <Hero />
+          <Features />
+          <DashboardPreview />
+          <FAQ />
+          <CTA />
           </main>
           
           <Footer onLegalClick={handleLegalClick} onResourceClick={handleResourceClick} onCompanyClick={handleCompanyClick} onProductClick={handleProductClick} />
