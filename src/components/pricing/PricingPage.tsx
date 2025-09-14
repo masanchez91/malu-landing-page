@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 import { createWhatsAppLink } from '../../utils/whatsapp';
 
 type BillingCycle = 'monthly' | 'quarterly' | 'semiannual' | 'annual';
@@ -111,20 +112,102 @@ export function PricingPage() {
     return `¡Hola! Me interesa contratar el plan ${planName} (${houses}) con facturación ${cycle}. ¿Podrían ayudarme con el proceso de contratación?`;
   };
 
+  // Variantes de animación para entrada suave
+  const pageVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 20,
+    },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const childVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 15,
+    },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  const floatingVariants = {
+    animate: {
+      y: [0, -8, 0],
+      transition: {
+        duration: 6,
+        ease: "easeInOut",
+        repeat: Infinity,
+        repeatType: "reverse"
+      }
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-white dark:bg-neutral-900 py-16">
-      <div className="max-w-7xl mx-auto px-6">
+    <motion.div 
+      className="min-h-screen bg-white dark:bg-neutral-900 py-16 relative overflow-hidden"
+      initial="hidden"
+      animate="visible"
+      variants={pageVariants}
+    >
+      {/* Elementos decorativos de fondo para transmitir paz */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <motion.div
+          className="absolute top-20 left-10 w-32 h-32 bg-primary-100/30 dark:bg-primary-900/20 rounded-full blur-xl"
+          variants={floatingVariants}
+          animate="animate"
+        />
+        <motion.div
+          className="absolute top-40 right-20 w-24 h-24 bg-blue-100/40 dark:bg-blue-900/20 rounded-full blur-xl"
+          variants={floatingVariants}
+          animate="animate"
+          style={{ animationDelay: '2s' }}
+        />
+        <motion.div
+          className="absolute bottom-40 left-1/4 w-20 h-20 bg-green-100/30 dark:bg-green-900/20 rounded-full blur-xl"
+          variants={floatingVariants}
+          animate="animate"
+          style={{ animationDelay: '4s' }}
+        />
+        <motion.div
+          className="absolute bottom-20 right-1/3 w-28 h-28 bg-purple-100/25 dark:bg-purple-900/15 rounded-full blur-xl"
+          variants={floatingVariants}
+          animate="animate"
+          style={{ animationDelay: '1s' }}
+        />
+      </div>
+
+      <motion.div className="max-w-7xl mx-auto px-6 relative z-10" variants={childVariants}>
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-neutral-900 dark:text-white mb-4">
+        <motion.div className="text-center mb-12" variants={childVariants}>
+          <motion.h1 
+            className="text-4xl font-bold text-neutral-900 dark:text-white mb-4"
+            variants={childVariants}
+          >
             {t('pricing.title')}
-          </h1>
-          <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto mb-8">
+          </motion.h1>
+          <motion.p 
+            className="text-lg text-neutral-600 dark:text-neutral-300 max-w-3xl mx-auto mb-8"
+            variants={childVariants}
+          >
             {t('pricing.subtitle')}
-          </p>
+          </motion.p>
 
           {/* Currency Selector */}
-          <div className="flex justify-center mb-6">
+          <motion.div className="flex justify-center mb-6" variants={childVariants}>
             <div className="inline-flex bg-neutral-100 dark:bg-neutral-800 rounded-lg p-1">
               <button
                 onClick={() => setSelectedCurrency('USD')}
@@ -157,10 +240,10 @@ export function PricingPage() {
                 </div>
               </button>
             </div>
-          </div>
+          </motion.div>
 
             {/* Billing Cycle Selector */}
-            <div className="w-full max-w-4xl mx-auto mb-8">
+            <motion.div className="w-full max-w-4xl mx-auto mb-8" variants={childVariants}>
               {/* Mobile Grid Layout */}
               <div className="grid grid-cols-2 gap-3 md:hidden">
                 {billingCycles.map((cycle) => (
@@ -216,23 +299,40 @@ export function PricingPage() {
                   </button>
                 ))}
               </div>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12" variants={childVariants}>
           {plans.map((plan, index) => {
             const currentPrice = getPriceForCycle(plan, selectedCycle);
             const isPopular = index === 1; // Growth plan is popular
 
             return (
-              <div
+              <motion.div
                 key={plan.name}
                 className={`relative bg-white dark:bg-neutral-800 rounded-2xl border-2 p-8 transition-all duration-300 hover:shadow-xl ${
                   isPopular
                     ? 'border-primary-500 shadow-lg scale-105'
                     : 'border-neutral-200 dark:border-neutral-700 hover:border-primary-300'
                 }`}
+                variants={{
+                  hidden: { opacity: 0, y: 30, scale: 0.95 },
+                  visible: { 
+                    opacity: 1, 
+                    y: 0, 
+                    scale: isPopular ? 1.05 : 1,
+                    transition: {
+                      duration: 0.7,
+                      ease: "easeOut",
+                      delay: index * 0.15
+                    }
+                  }
+                }}
+                whileHover={{ 
+                  y: -5,
+                  transition: { duration: 0.2 }
+                }}
               >
                 {isPopular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -331,13 +431,13 @@ export function PricingPage() {
                 >
                   {t('pricing.contractButton')}
                 </a>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
 
         {/* Additional Info */}
-        <div className="bg-neutral-50 dark:bg-neutral-800 rounded-2xl p-8 text-center">
+        <motion.div className="bg-neutral-50 dark:bg-neutral-800 rounded-2xl p-8 text-center" variants={childVariants}>
           <h3 className="text-xl font-bold text-neutral-900 dark:text-white mb-4">
             {i18n.language === 'es' ? '¿Necesitas más de 100 casas?' : 'Need more than 100 units?'}
           </h3>
@@ -361,9 +461,9 @@ export function PricingPage() {
             </svg>
             {i18n.language === 'es' ? 'Cotización Personalizada' : 'Custom Quote'}
           </a>
-        </div>
+        </motion.div>
 
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
