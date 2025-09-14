@@ -40,7 +40,7 @@ export function ContactPage() {
                       {t('company.contact.info.general.description')}
                     </p>
                     <a 
-                      href={createWhatsAppLink(`¡Hola! Tengo una consulta general sobre Malu. ¿Podrían ayudarme?`)}
+                      href={createWhatsAppLink(t('beta.whatsappMessages.contactGeneral'))}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary-600 dark:text-primary-400 hover:underline font-medium"
@@ -67,7 +67,7 @@ export function ContactPage() {
                       {t('company.contact.info.sales.description')}
                     </p>
                     <a 
-                      href={createWhatsAppLink(`¡Hola! Me interesa Malu para mi condominio. ¿Podrían darme información de ventas?`)}
+                      href={createWhatsAppLink(t('beta.whatsappMessages.contactSales'))}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-emerald-600 dark:text-emerald-400 hover:underline font-medium"
@@ -94,7 +94,7 @@ export function ContactPage() {
                       {t('company.contact.info.support.description')}
                     </p>
                     <a 
-                      href={createWhatsAppLink(`¡Hola! Necesito soporte técnico con Malu. ¿Podrían ayudarme?`)}
+                      href={createWhatsAppLink(t('beta.whatsappMessages.contactSupport'))}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-secondary-600 dark:text-secondary-400 hover:underline font-medium"

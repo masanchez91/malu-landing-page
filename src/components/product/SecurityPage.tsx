@@ -292,7 +292,7 @@ export function SecurityPage() {
             {t('product.security.cta.description')}
           </p>
           <a
-            href={createWhatsAppLink(`¡Hola! Tengo preguntas sobre la seguridad de Malu. ¿Podrían resolverlas?`)}
+            href={createWhatsAppLink(t('beta.whatsappMessages.security'))}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"

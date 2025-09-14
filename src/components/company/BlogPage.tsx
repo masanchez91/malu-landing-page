@@ -213,7 +213,7 @@ export function BlogPage() {
             {t('company.blog.comingSoon.description')}
           </p>
           <a
-            href={createWhatsAppLink(`¡Hola! Me interesa Malu para mi condominio después de leer el blog. ¿Podrían darme una demo personalizada?`)}
+            href={createWhatsAppLink(t('beta.whatsappMessages.blog'))}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"

@@ -203,7 +203,7 @@ export function FeaturesPage() {
             {t('product.features.cta.description')}
           </p>
           <a
-            href={createWhatsAppLink(`¡Hola! Me interesa una demo de las funcionalidades de Malu. ¿Podrían mostrarme cómo funciona?`)}
+            href={createWhatsAppLink(t('beta.whatsappMessages.features'))}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"

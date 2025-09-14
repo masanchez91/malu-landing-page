@@ -201,7 +201,7 @@ export function CareersPage() {
           </p>
           <div className="flex items-center justify-center gap-4">
             <a
-              href={createWhatsAppLink(`¡Hola! Tengo preguntas sobre las oportunidades de carrera en Malu. ¿Podrían ayudarme?`)}
+              href={createWhatsAppLink(t('beta.whatsappMessages.careers'))}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"

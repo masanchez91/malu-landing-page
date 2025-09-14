@@ -448,10 +448,7 @@ export function PricingPage() {
             }
           </p>
           <a
-            href={createWhatsAppLink(i18n.language === 'es' 
-              ? '¡Hola! Necesito información sobre los planes Enterprise para más de 100 casas. ¿Podrían ayudarme con una cotización personalizada?'
-              : 'Hello! I need information about Enterprise plans for more than 100 units. Could you help me with a personalized quote?'
-            )}
+            href={createWhatsAppLink(t('beta.whatsappMessages.pricingEnterprise'))}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"

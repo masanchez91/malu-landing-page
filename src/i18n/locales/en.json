@@ -686,6 +686,8 @@
   },
   "beta": {
     "title": "Early Access — Beta Program",
+    "titleShort": "Early Access",
+    "titleMobile": "🎯 Beta Program",
     "subtitle": "Only for the first 50 visionaries",
     "description": "Try the platform for 3 months completely free and secure an exclusive lifetime discount on your annual plan (50% OFF).",
     "benefitsTitle": "Exclusive benefits",
@@ -713,6 +715,26 @@
     "exclusiveAccess": "Only 11 spots left for early access",
     "almostFull": "Almost full!",
     "spotsRemaining": "Only {{count}} spots available",
+    "joinNowButton": "Join now!",
+    "whatsappMessages": {
+      "header": "Hello! I would like to request a Malu demo from the header. When could we schedule a presentation?",
+      "headerMobile": "Hello! I would like to request a Malu demo from mobile. When could we schedule a presentation?",
+      "hero": "Hello! I'm interested in trying Malu for my condominium. Could you give me more information?",
+      "heroDemo": "Hello! I would like to request a Malu demo. When could we schedule a presentation?",
+      "cta": "Hello! I would like to request a Malu demo. When could we schedule a presentation?",
+      "ctaInfo": "Hello! I'm interested in learning more about Malu's features. Could you give me more information?",
+      "contactGeneral": "Hello! I have a general question about Malu. Could you help me?",
+      "contactSales": "Hello! I'm interested in Malu for my condominium. Could you give me sales information?",
+      "contactSupport": "Hello! I need technical support with Malu. Could you help me?",
+      "about": "Hello! I'm interested in learning more about Malu and your team. Could you tell me more?",
+      "blog": "Hello! I'm interested in Malu for my condominium after reading the blog. Could you give me a personalized demo?",
+      "careers": "Hello! I have questions about career opportunities at Malu. Could you help me?",
+      "features": "Hello! I'm interested in a demo of Malu's features. Could you show me how it works?",
+      "integrations": "Hello! I need a specific integration for Malu. Could you help me?",
+      "security": "Hello! I have questions about Malu's security. Could you answer them?",
+      "pricingEnterprise": "Hello! I need information about Enterprise plans for more than 100 units. Could you help me with a personalized quote?",
+      "article": "Hello! I'm interested in Malu for my condominium after reading this article. Could you give me more information?"
+    },
     "whatsappMessage": "Hello, I want to be part of the Beta program and get the lifetime discount."
   },
   "pricing": {

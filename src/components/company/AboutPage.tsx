@@ -151,7 +151,7 @@ export function AboutPage() {
               {t('company.about.team.description')}
             </p>
             <a
-              href={createWhatsAppLink(`¡Hola! Me interesa conocer más sobre Malu y su equipo. ¿Podrían contarme más?`)}
+              href={createWhatsAppLink(t('beta.whatsappMessages.about'))}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"

@@ -154,7 +154,7 @@ export function IntegrationsPage() {
             {t('product.integrations.cta.description')}
           </p>
           <a
-            href={createWhatsAppLink(`¡Hola! Necesito una integración específica para Malu. ¿Podrían ayudarme?`)}
+            href={createWhatsAppLink(t('beta.whatsappMessages.integrations'))}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"

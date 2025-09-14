@@ -225,7 +225,7 @@ export function ArticlePage({ article, onBack }: ArticlePageProps) {
             {t('blog.cta.description')}
           </p>
           <a
-            href={createWhatsAppLink(`¡Hola! Me interesa Malu para mi condominio después de leer este artículo. ¿Podrían darme más información?`)}
+            href={createWhatsAppLink(t('beta.whatsappMessages.article'))}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"

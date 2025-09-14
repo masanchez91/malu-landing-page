@@ -686,6 +686,8 @@
   },
   "beta": {
     "title": "Acceso Anticipado — Programa Beta",
+    "titleShort": "Acceso Anticipado",
+    "titleMobile": "🎯 Beta Programa",
     "subtitle": "Solo para los primeros 50 visionarios",
     "description": "Prueba la plataforma durante 3 meses totalmente gratis y asegura un descuento exclusivo de por vida en tu plan anual (50% OFF).",
     "benefitsTitle": "Beneficios exclusivos",
@@ -713,6 +715,26 @@
     "exclusiveAccess": "Solo quedan 11 lugares para el acceso anticipado",
     "almostFull": "¡Cupo casi completo!",
     "spotsRemaining": "Solo {{count}} lugares disponibles",
+    "joinNowButton": "¡Únete ya!",
+    "whatsappMessages": {
+      "header": "¡Hola! Me gustaría solicitar una demo de Malu desde el header. ¿Cuándo podríamos agendar una presentación?",
+      "headerMobile": "¡Hola! Me gustaría solicitar una demo de Malu desde móvil. ¿Cuándo podríamos agendar una presentación?",
+      "hero": "¡Hola! Me interesa probar Malu para mi condominio. ¿Podrían darme más información?",
+      "heroDemo": "¡Hola! Me gustaría solicitar una demo de Malu. ¿Cuándo podríamos agendar una presentación?",
+      "cta": "¡Hola! Me gustaría solicitar una demo de Malu. ¿Cuándo podríamos agendar una presentación?",
+      "ctaInfo": "¡Hola! Me interesa conocer más sobre las funcionalidades de Malu. ¿Podrían darme más información?",
+      "contactGeneral": "¡Hola! Tengo una consulta general sobre Malu. ¿Podrían ayudarme?",
+      "contactSales": "¡Hola! Me interesa Malu para mi condominio. ¿Podrían darme información de ventas?",
+      "contactSupport": "¡Hola! Necesito soporte técnico con Malu. ¿Podrían ayudarme?",
+      "about": "¡Hola! Me interesa conocer más sobre Malu y su equipo. ¿Podrían contarme más?",
+      "blog": "¡Hola! Me interesa Malu para mi condominio después de leer el blog. ¿Podrían darme una demo personalizada?",
+      "careers": "¡Hola! Tengo preguntas sobre las oportunidades de carrera en Malu. ¿Podrían ayudarme?",
+      "features": "¡Hola! Me interesa una demo de las funcionalidades de Malu. ¿Podrían mostrarme cómo funciona?",
+      "integrations": "¡Hola! Necesito una integración específica para Malu. ¿Podrían ayudarme?",
+      "security": "¡Hola! Tengo preguntas sobre la seguridad de Malu. ¿Podrían resolverlas?",
+      "pricingEnterprise": "¡Hola! Necesito información sobre los planes Enterprise para más de 100 casas. ¿Podrían ayudarme con una cotización personalizada?",
+      "article": "¡Hola! Me interesa Malu para mi condominio después de leer este artículo. ¿Podrían darme más información?"
+    },
     "whatsappMessage": "Hola, quiero ser parte del programa Beta y obtener el descuento de por vida."
   },
   "pricing": {

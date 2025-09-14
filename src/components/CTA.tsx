@@ -44,7 +44,7 @@ export function CTA() {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a 
-              href={createWhatsAppLink(`¡Hola! Me gustaría solicitar una demo de Malu. ¿Cuándo podríamos agendar una presentación?`)}
+              href={createWhatsAppLink(t('beta.whatsappMessages.cta'))}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -53,7 +53,7 @@ export function CTA() {
               </Button>
             </a>
             <a 
-              href={createWhatsAppLink(`¡Hola! Me interesa conocer más sobre las funcionalidades de Malu. ¿Podrían darme más información?`)}
+              href={createWhatsAppLink(t('beta.whatsappMessages.ctaInfo'))}
               target="_blank"
               rel="noopener noreferrer"
             >

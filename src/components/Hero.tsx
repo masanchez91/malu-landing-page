@@ -57,7 +57,7 @@ export function Hero() {
           className="flex flex-wrap gap-4"
         >
           <a 
-            href={createWhatsAppLink(`¡Hola! Me interesa probar Malu para mi condominio. ¿Podrían darme más información?`)}
+            href={createWhatsAppLink(t('beta.whatsappMessages.hero'))}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -67,7 +67,7 @@ export function Hero() {
           </a>
 
           <a 
-            href={createWhatsAppLink(`¡Hola! Me gustaría solicitar una demo de Malu. ¿Cuándo podríamos agendar una presentación?`)}
+            href={createWhatsAppLink(t('beta.whatsappMessages.heroDemo'))}
             target="_blank"
             rel="noopener noreferrer"
           >

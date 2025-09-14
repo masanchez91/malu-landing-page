@@ -59,7 +59,7 @@ export function LegalRouter({ activePage, onClose }: LegalRouterProps) {
       case 'pricing':
         return <PricingPage />;
       case 'beta':
-        return <BetaPage />;
+        return <BetaPage onClose={onClose} />;
       default:
         return null;
     }
@@ -67,30 +67,32 @@ export function LegalRouter({ activePage, onClose }: LegalRouterProps) {
 
   return (
     <div className="fixed inset-0 z-50 bg-white dark:bg-neutral-900 overflow-y-auto">
-      {/* Close button */}
-      <div className="sticky top-0 z-10 bg-white dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 px-6 py-4">
-        <div className="max-w-4xl mx-auto flex justify-between items-center">
-          <button
-            onClick={onClose}
-            className="inline-flex items-center gap-2 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            Volver al inicio
-          </button>
-          
-          <button
-            onClick={onClose}
-            className="p-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
-            aria-label="Cerrar"
-          >
-            <svg className="w-6 h-6 text-neutral-600 dark:text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
+      {/* Close button - Solo mostrar para páginas que no sean beta */}
+      {activePage !== 'beta' && (
+        <div className="sticky top-0 z-10 bg-white/95 dark:bg-neutral-900/95 backdrop-blur-sm border-b border-neutral-200/50 dark:border-neutral-800/50 px-6 py-4">
+          <div className="max-w-4xl mx-auto flex justify-between items-center">
+            <button
+              onClick={onClose}
+              className="inline-flex items-center gap-2 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              Volver al inicio
+            </button>
+            
+            <button
+              onClick={onClose}
+              className="p-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+              aria-label="Cerrar"
+            >
+              <svg className="w-6 h-6 text-neutral-600 dark:text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Page content */}
       {renderPage()}
