@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { createWhatsAppLink } from '../../utils/whatsapp';
 
 export function ContactPage() {
   const { t } = useTranslation();
@@ -39,10 +40,12 @@ export function ContactPage() {
                       {t('company.contact.info.general.description')}
                     </p>
                     <a 
-                      href="mailto:mauro@holy-code.com" 
+                      href={createWhatsAppLink(`¡Hola! Tengo una consulta general sobre Malu. ¿Podrían ayudarme?`)}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-primary-600 dark:text-primary-400 hover:underline font-medium"
                     >
-                      mauro@holy-code.com
+                      WhatsApp: +52 33 2159 4848
                     </a>
                   </div>
                 </div>
@@ -64,10 +67,12 @@ export function ContactPage() {
                       {t('company.contact.info.sales.description')}
                     </p>
                     <a 
-                      href="mailto:mauro@holy-code.com" 
+                      href={createWhatsAppLink(`¡Hola! Me interesa Malu para mi condominio. ¿Podrían darme información de ventas?`)}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-emerald-600 dark:text-emerald-400 hover:underline font-medium"
                     >
-                      mauro@holy-code.com
+                      WhatsApp: +52 33 2159 4848
                     </a>
                   </div>
                 </div>
@@ -89,10 +94,12 @@ export function ContactPage() {
                       {t('company.contact.info.support.description')}
                     </p>
                     <a 
-                      href="mailto:mauro@holy-code.com" 
+                      href={createWhatsAppLink(`¡Hola! Necesito soporte técnico con Malu. ¿Podrían ayudarme?`)}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-secondary-600 dark:text-secondary-400 hover:underline font-medium"
                     >
-                      mauro@holy-code.com
+                      WhatsApp: +52 33 2159 4848
                     </a>
                   </div>
                 </div>
@@ -139,7 +146,7 @@ export function ContactPage() {
                     <input
                       type="text"
                       className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-600 rounded-lg bg-white dark:bg-neutral-700 text-neutral-900 dark:text-white placeholder-neutral-500 dark:placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                      placeholder={t('company.contact.form.namePlaceholder')}
+                      placeholder={t('company.contact.form.namePlaceholder').toString()}
                     />
                   </div>
                   <div>
@@ -149,7 +156,7 @@ export function ContactPage() {
                     <input
                       type="email"
                       className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-600 rounded-lg bg-white dark:bg-neutral-700 text-neutral-900 dark:text-white placeholder-neutral-500 dark:placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                      placeholder={t('company.contact.form.emailPlaceholder')}
+                      placeholder={t('company.contact.form.emailPlaceholder').toString()}
                     />
                   </div>
                 </div>
@@ -161,7 +168,7 @@ export function ContactPage() {
                   <input
                     type="text"
                     className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-600 rounded-lg bg-white dark:bg-neutral-700 text-neutral-900 dark:text-white placeholder-neutral-500 dark:placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                    placeholder={t('company.contact.form.companyPlaceholder')}
+                    placeholder={t('company.contact.form.companyPlaceholder').toString()}
                   />
                 </div>
 
@@ -186,7 +193,7 @@ export function ContactPage() {
                   <textarea
                     rows={5}
                     className="w-full px-4 py-3 border border-neutral-300 dark:border-neutral-600 rounded-lg bg-white dark:bg-neutral-700 text-neutral-900 dark:text-white placeholder-neutral-500 dark:placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent resize-none"
-                    placeholder={t('company.contact.form.messagePlaceholder')}
+                    placeholder={t('company.contact.form.messagePlaceholder').toString()}
                   ></textarea>
                 </div>
 

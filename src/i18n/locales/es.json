@@ -598,10 +598,6 @@
         "email": "Campañas de email automatizadas",
         "sms": "Mensajes de texto inmediatos"
       },
-      "banking": {
-        "title": "Bancos y Entidades Financieras",
-        "more": "Más bancos"
-      },
       "webhooks": {
         "title": "Webhooks y APIs",
         "description": "Integra Malu con tus sistemas existentes mediante nuestras APIs y webhooks.",

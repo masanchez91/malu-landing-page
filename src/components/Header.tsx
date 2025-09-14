@@ -5,6 +5,7 @@ import { useDarkMode } from '../hooks/useDarkMode';
 import { Logo } from './ui/Logo';
 import { Button } from './ui/Button';
 import { IconMenu, IconClose, IconSun, IconMoon, IconGlobe } from './icons';
+import { createWhatsAppLink } from '../utils/whatsapp';
 
 export function Header() {
   const { t, i18n } = useTranslation();
@@ -66,9 +67,15 @@ export function Header() {
               {isDark ? <IconSun className="w-4 h-4" /> : <IconMoon className="w-4 h-4" />}
             </button>
 
-            <Button size="sm">
-              {t('nav.demo')}
-            </Button>
+            <a 
+              href={createWhatsAppLink(`¡Hola! Me gustaría solicitar una demo de Malu desde el header. ¿Cuándo podríamos agendar una presentación?`)}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="sm">
+                {t('nav.demo')}
+              </Button>
+            </a>
           </div>
         </nav>
 
@@ -91,7 +98,7 @@ export function Header() {
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="p-2 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
-            aria-label={t('nav.menu')}
+            aria-label={t('nav.menu').toString()}
           >
             {isMenuOpen ? <IconClose /> : <IconMenu />}
           </button>
@@ -118,9 +125,16 @@ export function Header() {
                   {item.name}
                 </a>
               ))}
-              <Button className="w-full" onClick={() => setIsMenuOpen(false)}>
-                {t('nav.demo')}
-              </Button>
+              <a 
+                href={createWhatsAppLink(`¡Hola! Me gustaría solicitar una demo de Malu desde móvil. ¿Cuándo podríamos agendar una presentación?`)}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <Button className="w-full">
+                  {t('nav.demo')}
+                </Button>
+              </a>
             </div>
           </motion.div>
         )}

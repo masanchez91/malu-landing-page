@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 import { Button } from './ui/Button';
+import { createWhatsAppLink } from '../utils/whatsapp';
 import { Badge } from './ui/Badge';
 import { MetricCard } from './ui/MetricCard';
 
@@ -55,13 +56,25 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="flex flex-wrap gap-4"
         >
-          <Button size="lg">
-            {t('hero.tryButton')}
-          </Button>
+          <a 
+            href={createWhatsAppLink(`¡Hola! Me interesa probar Malu para mi condominio. ¿Podrían darme más información?`)}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button size="lg">
+              {t('hero.tryButton')}
+            </Button>
+          </a>
 
-          <Button variant="outline" size="lg">
-            {t('hero.demoButton')}
-          </Button>
+          <a 
+            href={createWhatsAppLink(`¡Hola! Me gustaría solicitar una demo de Malu. ¿Cuándo podríamos agendar una presentación?`)}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="outline" size="lg">
+              {t('hero.demoButton')}
+            </Button>
+          </a>
         </motion.div>
 
         <motion.div 
@@ -105,19 +118,19 @@ export function Hero() {
           {/* Metrics Grid */}
           <div className="p-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
             <MetricCard 
-              title={t('dashboard.collection')} 
+              title={t('dashboard.collection').toString()} 
               value="$12,430" 
-              subtitle={t('dashboard.currentMonth')} 
+              subtitle={t('dashboard.currentMonth').toString()} 
             />
             <MetricCard 
-              title={t('dashboard.access')} 
+              title={t('dashboard.access').toString()} 
               value="1,024" 
-              subtitle={t('dashboard.today')} 
+              subtitle={t('dashboard.today').toString()} 
             />
             <MetricCard 
-              title={t('dashboard.reservations')} 
+              title={t('dashboard.reservations').toString()} 
               value="18" 
-              subtitle={t('dashboard.week')} 
+              subtitle={t('dashboard.week').toString()} 
             />
           </div>
 

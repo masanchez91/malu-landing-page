@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { createWhatsAppLink } from '../../utils/whatsapp';
 import { ArticlePage } from '../blog/ArticlePage';
 import { getFeaturedArticle, getRecentArticles, type Article } from '../../data/articles';
 
@@ -212,7 +213,9 @@ export function BlogPage() {
             {t('company.blog.comingSoon.description')}
           </p>
           <a
-            href="mailto:mauro@holy-code.com"
+            href={createWhatsAppLink(`¡Hola! Me interesa Malu para mi condominio después de leer el blog. ¿Podrían darme una demo personalizada?`)}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

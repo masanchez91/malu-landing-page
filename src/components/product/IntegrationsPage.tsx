@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { createWhatsAppLink } from '../../utils/whatsapp';
 
 export function IntegrationsPage() {
   const { t } = useTranslation();
@@ -110,46 +111,6 @@ export function IntegrationsPage() {
           </div>
         </div>
 
-        {/* Banking & Financial */}
-        <div className="mb-16">
-          <h2 className="text-2xl font-bold text-neutral-900 dark:text-white mb-8 flex items-center gap-3">
-            <div className="w-8 h-8 bg-emerald-100 dark:bg-emerald-900 rounded-lg flex items-center justify-center">
-              <svg className="w-4 h-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
-              </svg>
-            </div>
-            {t('product.integrations.banking.title')}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 text-center">
-              <div className="w-12 h-12 bg-red-100 dark:bg-red-900 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-red-600 dark:text-red-400 font-bold text-xs">SANT</span>
-              </div>
-              <h3 className="font-medium text-neutral-900 dark:text-white">Santander</h3>
-            </div>
-            
-            <div className="bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 text-center">
-              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-blue-600 dark:text-blue-400 font-bold text-xs">BBVA</span>
-              </div>
-              <h3 className="font-medium text-neutral-900 dark:text-white">BBVA</h3>
-            </div>
-            
-            <div className="bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 text-center">
-              <div className="w-12 h-12 bg-yellow-100 dark:bg-yellow-900 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-yellow-600 dark:text-yellow-400 font-bold text-xs">BANC</span>
-              </div>
-              <h3 className="font-medium text-neutral-900 dark:text-white">Bancolombia</h3>
-            </div>
-            
-            <div className="bg-white dark:bg-neutral-800 rounded-xl border border-neutral-200 dark:border-neutral-700 p-6 text-center">
-              <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-green-600 dark:text-green-400 font-bold text-xs">+50</span>
-              </div>
-              <h3 className="font-medium text-neutral-900 dark:text-white">{t('product.integrations.banking.more')}</h3>
-            </div>
-          </div>
-        </div>
 
         {/* Webhook & API */}
         <div className="mb-16">
@@ -193,7 +154,9 @@ export function IntegrationsPage() {
             {t('product.integrations.cta.description')}
           </p>
           <a
-            href="mailto:mauro@holy-code.com"
+            href={createWhatsAppLink(`¡Hola! Necesito una integración específica para Malu. ¿Podrían ayudarme?`)}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

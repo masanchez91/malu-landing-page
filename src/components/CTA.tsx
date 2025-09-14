@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 import { Button } from './ui/Button';
+import { createWhatsAppLink } from '../utils/whatsapp';
 
 export function CTA() {
   const { t } = useTranslation();
@@ -42,12 +43,24 @@ export function CTA() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <Button size="lg">
-              {t('cta.demoButton')}
-            </Button>
-            <Button variant="outline" size="lg">
-              {t('cta.exploreButton')}
-            </Button>
+            <a 
+              href={createWhatsAppLink(`¡Hola! Me gustaría solicitar una demo de Malu. ¿Cuándo podríamos agendar una presentación?`)}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg">
+                {t('cta.demoButton')}
+              </Button>
+            </a>
+            <a 
+              href={createWhatsAppLink(`¡Hola! Me interesa conocer más sobre las funcionalidades de Malu. ¿Podrían darme más información?`)}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="outline" size="lg">
+                {t('cta.exploreButton')}
+              </Button>
+            </a>
           </motion.div>
         </div>
       </div>
