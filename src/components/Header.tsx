@@ -7,7 +7,11 @@ import { Button } from './ui/Button';
 import { IconMenu, IconClose, IconSun, IconMoon, IconGlobe } from './icons';
 import { createWhatsAppLink } from '../utils/whatsapp';
 
-export function Header() {
+interface HeaderProps {
+  onPricingClick?: () => void;
+}
+
+export function Header({ onPricingClick }: HeaderProps) {
   const { t, i18n } = useTranslation();
   const { isDark, setIsDark } = useDarkMode();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,9 +23,9 @@ export function Header() {
   };
 
   const navigation = [
-    { name: t('nav.product'), href: '#product' },
-    { name: t('nav.pricing'), href: '#pricing' },
-    { name: t('nav.developers'), href: '#developers' }
+    { name: t('nav.product'), href: '#product', action: null },
+    { name: t('nav.pricing'), href: '#pricing', action: 'pricing' as const },
+    { name: t('nav.developers'), href: '#developers', action: null }
   ];
 
   return (
@@ -36,13 +40,23 @@ export function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           {navigation.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-sm text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors"
-            >
-              {item.name}
-            </a>
+            item.action ? (
+              <button
+                key={item.name}
+                onClick={() => item.action === 'pricing' && onPricingClick?.()}
+                className="text-sm text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors"
+              >
+                {item.name}
+              </button>
+            ) : (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-sm text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors"
+              >
+                {item.name}
+              </a>
+            )
           ))}
           
           <div className="flex items-center gap-2">
@@ -116,14 +130,27 @@ export function Header() {
           >
             <div className="px-6 py-4 space-y-4">
               {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors"
-                >
-                  {item.name}
-                </a>
+                item.action ? (
+                  <button
+                    key={item.name}
+                    onClick={() => {
+                      if (item.action === 'pricing') onPricingClick?.();
+                      setIsMenuOpen(false);
+                    }}
+                    className="block text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors text-left"
+                  >
+                    {item.name}
+                  </button>
+                ) : (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="block text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors"
+                  >
+                    {item.name}
+                  </a>
+                )
               ))}
               <a 
                 href={createWhatsAppLink(`¡Hola! Me gustaría solicitar una demo de Malu desde móvil. ¿Cuándo podríamos agendar una presentación?`)}

@@ -53,7 +53,7 @@ export function Features() {
   };
 
   return (
-    <section ref={ref} className="py-16">
+    <section id="product" ref={ref} className="py-16">
       <motion.div
         initial="hidden"
         animate={isIntersecting ? "visible" : "hidden"}

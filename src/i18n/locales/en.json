@@ -683,5 +683,43 @@
         "button": "Contact Security"
       }
     }
+  },
+  "pricing": {
+    "title": "Plans & Pricing",
+    "subtitle": "Choose the perfect plan for your condominium. All plans include Malu's core functionalities.",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "description": "Perfect for small condominiums",
+        "houses": "1 – 20 units"
+      },
+      "growth": {
+        "name": "Growth",
+        "description": "Ideal for growing condominiums",
+        "houses": "21 – 40 units"
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "For established condominiums",
+        "houses": "41 – 100 units"
+      }
+    },
+    "billing": {
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "semiannual": "Semi-annual",
+      "annual": "Annual"
+    },
+    "savings": "Savings",
+    "vs": "vs",
+    "contractButton": "Get Plan",
+    "example": "Example:",
+    "features": {
+      "billing": "Complete billing management",
+      "access": "QR access control",
+      "reservations": "Reservation system",
+      "communication": "Centralized communication",
+      "support": "Technical support included"
+    }
   }
 }
