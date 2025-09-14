@@ -9,7 +9,7 @@ import { CTA } from './components/CTA';
 import { Footer } from './components/Footer';
 import { LegalRouter } from './components/LegalRouter';
 
-type PageType = 'privacy' | 'terms' | 'cookies' | 'gdpr' | 'guides' | 'support' | 'status' | 'about' | 'blog' | 'careers' | 'contact' | 'features' | 'integrations' | 'security' | 'pricing' | null;
+type PageType = 'privacy' | 'terms' | 'cookies' | 'gdpr' | 'guides' | 'support' | 'status' | 'about' | 'blog' | 'careers' | 'contact' | 'features' | 'integrations' | 'security' | 'pricing' | 'beta' | null;
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -40,6 +40,10 @@ function App() {
     setActivePage('pricing');
   };
 
+  const handleBetaClick = () => {
+    setActivePage('beta');
+  };
+
   const closePage = () => {
     setActivePage(null);
   };
@@ -61,7 +65,7 @@ function App() {
 
         {/* Main content */}
         <div className={activePage ? 'hidden' : 'block'}>
-          <Header onPricingClick={handlePricingClick} />
+            <Header onPricingClick={handlePricingClick} onBetaClick={handleBetaClick} />
           
           <main className="max-w-7xl mx-auto px-6 pb-24">
             <Hero />

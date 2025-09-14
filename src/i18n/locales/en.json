@@ -2,7 +2,7 @@
   "nav": {
     "product": "Product",
     "pricing": "Pricing",
-    "developers": "Developers",
+    "developers": "Early Access",
     "demo": "Request demo",
     "menu": "Open menu"
   },
@@ -683,6 +683,37 @@
         "button": "Contact Security"
       }
     }
+  },
+  "beta": {
+    "title": "Early Access — Beta Program",
+    "subtitle": "Only for the first 50 visionaries",
+    "description": "Try the platform for 3 months completely free and secure an exclusive lifetime discount on your annual plan (50% OFF).",
+    "benefitsTitle": "Exclusive benefits",
+    "benefits": {
+      "trial": "3 months free trial",
+      "discount": "Lifetime discount on annual plan",
+      "access": "Early access to all features",
+      "support": "Direct support and personalized follow-up",
+      "feedback": "Participate in platform evolution with your feedback"
+    },
+    "conditionsTitle": "Conditions",
+    "conditions": {
+      "annual": "Discount applies only to annual plan",
+      "choice": "After 3 months trial, you must choose your plan",
+      "noDiscount": "Monthly, quarterly or semi-annual plans don't apply discount",
+      "limited": "Only 50 spots available"
+    },
+    "urgencyTitle": "Don't miss out!",
+    "urgencyDescription": "Secure your spot now and join an exclusive community of visionaries.",
+    "ctaButton": "I want to be a Beta Tester 🚀",
+    "spotsLeft": "spots remaining",
+    "progressLabel": "Join the first ones",
+    "of": "of",
+    "enrolled": "enrolled",
+    "exclusiveAccess": "Only 11 spots left for early access",
+    "almostFull": "Almost full!",
+    "spotsRemaining": "Only {{count}} spots available",
+    "whatsappMessage": "Hello, I want to be part of the Beta program and get the lifetime discount."
   },
   "pricing": {
     "title": "Plans & Pricing",

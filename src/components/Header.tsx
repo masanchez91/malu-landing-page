@@ -9,9 +9,10 @@ import { createWhatsAppLink } from '../utils/whatsapp';
 
 interface HeaderProps {
   onPricingClick?: () => void;
+  onBetaClick?: () => void;
 }
 
-export function Header({ onPricingClick }: HeaderProps) {
+export function Header({ onPricingClick, onBetaClick }: HeaderProps) {
   const { t, i18n } = useTranslation();
   const { isDark, setIsDark } = useDarkMode();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ export function Header({ onPricingClick }: HeaderProps) {
   const navigation = [
     { name: t('nav.product'), href: '#product', action: null },
     { name: t('nav.pricing'), href: '#pricing', action: 'pricing' as const },
-    { name: t('nav.developers'), href: '#developers', action: null }
+    { name: t('nav.developers'), href: '#developers', action: 'beta' as const }
   ];
 
   return (
@@ -40,15 +41,18 @@ export function Header({ onPricingClick }: HeaderProps) {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           {navigation.map((item) => (
-            item.action ? (
-              <button
-                key={item.name}
-                onClick={() => item.action === 'pricing' && onPricingClick?.()}
-                className="text-sm text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors"
-              >
-                {item.name}
-              </button>
-            ) : (
+                item.action ? (
+                  <button
+                    key={item.name}
+                    onClick={() => {
+                      if (item.action === 'pricing') onPricingClick?.();
+                      if (item.action === 'beta') onBetaClick?.();
+                    }}
+                    className="text-sm text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors"
+                  >
+                    {item.name}
+                  </button>
+                ) : (
               <a
                 key={item.name}
                 href={item.href}
@@ -130,18 +134,19 @@ export function Header({ onPricingClick }: HeaderProps) {
           >
             <div className="px-6 py-4 space-y-4">
               {navigation.map((item) => (
-                item.action ? (
-                  <button
-                    key={item.name}
-                    onClick={() => {
-                      if (item.action === 'pricing') onPricingClick?.();
-                      setIsMenuOpen(false);
-                    }}
-                    className="block text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors text-left"
-                  >
-                    {item.name}
-                  </button>
-                ) : (
+                    item.action ? (
+                      <button
+                        key={item.name}
+                        onClick={() => {
+                          if (item.action === 'pricing') onPricingClick?.();
+                          if (item.action === 'beta') onBetaClick?.();
+                          setIsMenuOpen(false);
+                        }}
+                        className="block text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors text-left"
+                      >
+                        {item.name}
+                      </button>
+                    ) : (
                   <a
                     key={item.name}
                     href={item.href}

@@ -14,8 +14,9 @@ import { FeaturesPage } from './product/FeaturesPage';
 import { IntegrationsPage } from './product/IntegrationsPage';
 import { SecurityPage } from './product/SecurityPage';
 import { PricingPage } from './pricing/PricingPage';
+import { BetaPage } from './beta/BetaPage';
 
-type PageType = 'privacy' | 'terms' | 'cookies' | 'gdpr' | 'guides' | 'support' | 'status' | 'about' | 'blog' | 'careers' | 'contact' | 'features' | 'integrations' | 'security' | 'pricing' | null;
+type PageType = 'privacy' | 'terms' | 'cookies' | 'gdpr' | 'guides' | 'support' | 'status' | 'about' | 'blog' | 'careers' | 'contact' | 'features' | 'integrations' | 'security' | 'pricing' | 'beta' | null;
 
 interface LegalRouterProps {
   activePage: PageType;
@@ -57,6 +58,8 @@ export function LegalRouter({ activePage, onClose }: LegalRouterProps) {
         return <SecurityPage />;
       case 'pricing':
         return <PricingPage />;
+      case 'beta':
+        return <BetaPage />;
       default:
         return null;
     }

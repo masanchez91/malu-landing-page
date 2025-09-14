@@ -2,7 +2,7 @@
   "nav": {
     "product": "Producto",
     "pricing": "Precios",
-    "developers": "Developers",
+    "developers": "Acceso Anticipado",
     "demo": "Solicitar demo",
     "menu": "Abrir menú"
   },
@@ -683,6 +683,37 @@
         "button": "Contactar Seguridad"
       }
     }
+  },
+  "beta": {
+    "title": "Acceso Anticipado — Programa Beta",
+    "subtitle": "Solo para los primeros 50 visionarios",
+    "description": "Prueba la plataforma durante 3 meses totalmente gratis y asegura un descuento exclusivo de por vida en tu plan anual (50% OFF).",
+    "benefitsTitle": "Beneficios exclusivos",
+    "benefits": {
+      "trial": "3 meses de prueba gratuita",
+      "discount": "Descuento de por vida en el plan anual",
+      "access": "Acceso anticipado a todas las funciones",
+      "support": "Soporte directo y seguimiento personalizado",
+      "feedback": "Participa en la evolución de la plataforma con tu feedback"
+    },
+    "conditionsTitle": "Condiciones",
+    "conditions": {
+      "annual": "El descuento aplica únicamente en el plan anual",
+      "choice": "Al finalizar los 3 meses de prueba, deberás elegir tu plan",
+      "noDiscount": "Planes mensual, trimestral o semestral no aplican descuento",
+      "limited": "Solo disponibles 50 lugares"
+    },
+    "urgencyTitle": "¡No te quedes fuera!",
+    "urgencyDescription": "Asegura tu lugar ahora y únete a una comunidad exclusiva de visionarios.",
+    "ctaButton": "Quiero ser Beta Tester 🚀",
+    "spotsLeft": "lugares restantes",
+    "progressLabel": "Únete a los primeros",
+    "of": "de",
+    "enrolled": "inscritos",
+    "exclusiveAccess": "Solo quedan 11 lugares para el acceso anticipado",
+    "almostFull": "¡Cupo casi completo!",
+    "spotsRemaining": "Solo {{count}} lugares disponibles",
+    "whatsappMessage": "Hola, quiero ser parte del programa Beta y obtener el descuento de por vida."
   },
   "pricing": {
     "title": "Planes y Precios",
