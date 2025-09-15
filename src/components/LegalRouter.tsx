@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { PrivacyPolicy } from './legal/PrivacyPolicy';
 import { TermsOfService } from './legal/TermsOfService';
 import { CookiePolicy } from './legal/CookiePolicy';

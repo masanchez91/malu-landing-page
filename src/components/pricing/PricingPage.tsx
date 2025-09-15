@@ -151,7 +151,7 @@ export function PricingPage() {
         duration: 6,
         ease: "easeInOut",
         repeat: Infinity,
-        repeatType: "reverse"
+        repeatType: "reverse" as const
       }
     }
   };

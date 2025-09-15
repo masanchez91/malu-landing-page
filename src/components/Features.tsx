@@ -60,7 +60,7 @@ export function Features() {
         variants={containerVariants}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
       >
-        {features.map((feature, index) => (
+        {features.map((feature) => (
           <motion.div
             key={feature.title}
             variants={itemVariants}

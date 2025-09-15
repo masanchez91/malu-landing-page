@@ -28,17 +28,17 @@ export function DashboardPreview() {
           <MetricCard 
             title={t('insights.collection')} 
             value="$12,430" 
-            subtitle={t('insights.month')} 
+            subtitle={t('insights.month') || undefined} 
           />
           <MetricCard 
             title={t('insights.progress')} 
             value="69%" 
-            subtitle={t('insights.progressSubtitle')} 
+            subtitle={t('insights.progressSubtitle') || undefined} 
           />
           <MetricCard 
             title={t('insights.reservations')} 
             value="18" 
-            subtitle={t('insights.week')} 
+            subtitle={t('insights.week') || undefined} 
           />
         </div>
 
